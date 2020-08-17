@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: cmiMock
+  datasource:
+    url: jdbc:postgresql://localhost:5432/cmi
+    username: postgres
+    password: postgres
+    testwhileIdle: true
+    validationQuery: SELECT 1
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+        
+date:
+  format: YYYYMMddhhmmss   
+  
+security:
+  hash:
+    secret: secret
