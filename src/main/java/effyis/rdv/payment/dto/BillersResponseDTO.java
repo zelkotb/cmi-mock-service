@@ -2,8 +2,6 @@ package effyis.rdv.payment.dto;
 
 import java.util.List;
 
-import effyis.rdv.payment.entity.Biller;
-
 /**
  *
  * @author EL KOTB ZAKARIA
@@ -15,8 +13,9 @@ public class BillersResponseDTO {
 	private String codeRetour;
 	private String msg;
 	private int nbreCreancier;
-	private List<Biller> listeCreanciers;
+	private List<BillerDTO> listeCreanciers;
 	private String MAC;
+	private String category;
 
 	public String getDateServeur() {
 		return this.dateServeur;
@@ -50,11 +49,11 @@ public class BillersResponseDTO {
 		this.nbreCreancier = nbreCreancier;
 	}
 
-	public List<Biller> getListeCreanciers() {
+	public List<BillerDTO> getListeCreanciers() {
 		return this.listeCreanciers;
 	}
 
-	public void setListeCreanciers(List<Biller> listeCreanciers) {
+	public void setListeCreanciers(List<BillerDTO> listeCreanciers) {
 		this.listeCreanciers = listeCreanciers;
 	}
 
@@ -69,6 +68,14 @@ public class BillersResponseDTO {
 	public BillersResponseDTO() {
 		super();
 		// TODO Auto-generated constructor stub
+	}
+
+	public String getCategory() {
+		return this.category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
 	}
 
 }

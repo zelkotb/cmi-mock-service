@@ -23,3 +23,6 @@ date:
 security:
   hash:
     secret: secret
+    
+server:
+  port: 9000

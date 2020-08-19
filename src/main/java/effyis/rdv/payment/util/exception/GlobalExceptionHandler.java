@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+import effyis.rdv.payment.dto.BillerDTO;
 import effyis.rdv.payment.dto.BillersResponseDTO;
-import effyis.rdv.payment.entity.Biller;
 import effyis.rdv.payment.util.DateUtil;
 import effyis.rdv.payment.util.SecurityUtil;
 
@@ -51,7 +51,7 @@ public class GlobalExceptionHandler {
 	private BillersResponseDTO buildBillerResponse(CustomException e) throws NoSuchAlgorithmException {
 		BillersResponseDTO responseDTO = new BillersResponseDTO();
 		String dateServeur = DateUtil.formatDate(this.dateFormat, new Date());
-		List<Biller> billers = new ArrayList<>();
+		List<BillerDTO> billers = new ArrayList<>();
 		responseDTO.setDateServeur(dateServeur);
 		responseDTO.setCodeRetour(e.getReturnCode());
 		responseDTO.setMsg(e.getMessage());

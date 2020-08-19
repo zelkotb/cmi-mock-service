@@ -6,7 +6,7 @@ import java.util.Base64;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import effyis.rdv.payment.entity.Biller;
+import effyis.rdv.payment.dto.BillerDTO;
 
 /**
  *
@@ -23,7 +23,6 @@ public class SecurityUtil {
 		return md.digest();
 	}
 
-	// creancierID??
 	public static String calculateHashMAC(String aquereurID, String canalID, String dateServeur, String modeID,
 			String refTxSysPmt, String typeCanal, String secret) throws NoSuchAlgorithmException {
 
@@ -35,12 +34,12 @@ public class SecurityUtil {
 	}
 
 	// name + code...? code + name ...? code... + name ...?
-	public static String calculateSendMAC(String codeRetour, String dateServeur, List<Biller> billers, String secret)
+	public static String calculateSendMAC(String codeRetour, String dateServeur, List<BillerDTO> billers, String secret)
 			throws NoSuchAlgorithmException {
 		StringBuilder str = new StringBuilder(codeRetour);
 		str.append(dateServeur);
 		List<String> concateCodeNameBiller = billers.stream()
-				.map(biller -> biller.getBillerCode() + biller.getBillerName()).collect(Collectors.toList());
+				.map(biller -> biller.getCodeCreancier() + biller.getNomCreancier()).collect(Collectors.toList());
 		concateCodeNameBiller.forEach(c -> str.append(c));
 		str.append(billers.size());
 		str.append(secret);

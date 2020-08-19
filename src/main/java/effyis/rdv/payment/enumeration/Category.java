@@ -9,7 +9,8 @@ import java.util.stream.Stream;
  */
 public enum Category {
 
-	EAU_ELECTRICITE("1", "EAU & ELECTRICITE"), TELEPHONIE_INTERNET("2", "TELEPHONIE & INTERNET");
+	EAU_ELECTRICITE("1", "Eaux et Electricité"), TELEPHONIE_INTERNET("2", "Téléphonie et Internet"),
+	TRANSPORT("3", "Moyens de Transport"), IMPOT_TAXE("4", "Impots et Taxes");
 
 	private String code;
 	private String description;

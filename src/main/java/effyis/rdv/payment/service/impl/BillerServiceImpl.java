@@ -3,11 +3,13 @@ package effyis.rdv.payment.service.impl;
 import java.security.NoSuchAlgorithmException;
 import java.util.Date;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
+import effyis.rdv.payment.dto.BillerDTO;
 import effyis.rdv.payment.dto.BillersResponseDTO;
 import effyis.rdv.payment.entity.Biller;
 import effyis.rdv.payment.enumeration.Canal;
@@ -71,10 +73,21 @@ public class BillerServiceImpl implements BillerService {
 		billersResponseDTO.setCodeRetour(ReturnCode.C000.getReturnCode());
 		billersResponseDTO.setMsg(ReturnCode.C000.getComment());
 		billersResponseDTO.setNbreCreancier(billers.size());
-		billersResponseDTO.setListeCreanciers(billers);
+		List<BillerDTO> billersDTO = billers.stream().map(this::buildBuillerDTO).collect(Collectors.toList());
+		billersResponseDTO.setListeCreanciers(billersDTO);
 		billersResponseDTO.setMAC(SecurityUtil.calculateSendMAC(ReturnCode.C000.getReturnCode(),
-				DateUtil.formatDate(this.dateFormat, currentTime), billers, this.secret));
+				DateUtil.formatDate(this.dateFormat, currentTime), billersDTO, this.secret));
 		return billersResponseDTO;
+	}
+
+	private BillerDTO buildBuillerDTO(Biller biller) {
+		BillerDTO billerDTO = new BillerDTO();
+		billerDTO.setNomCreancier(biller.getBillerName());
+		billerDTO.setCodeCreancier(biller.getBillerCode());
+		billerDTO.setDescriptionCreancier(biller.getBillerDescription());
+		billerDTO.setLogoPath(biller.getLogoPath());
+		billerDTO.setSiteWeb(biller.getWebsite());
+		return billerDTO;
 	}
 
 	private Category getCategory(String categorieCreance) throws Exception {
