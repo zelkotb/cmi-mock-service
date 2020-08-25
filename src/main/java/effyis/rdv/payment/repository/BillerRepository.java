@@ -20,4 +20,7 @@ public interface BillerRepository extends JpaRepository<Biller, Long> {
 	List<Biller> findByCategoryAndCanals(Category category, Canal canal);
 
 	List<Biller> findAllByCanals(Canal canal);
+
+	Biller findByBillerCode(String billerCode);
+
 }

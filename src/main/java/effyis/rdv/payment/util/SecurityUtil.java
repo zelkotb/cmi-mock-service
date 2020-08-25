@@ -7,6 +7,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import effyis.rdv.payment.dto.BillerDTO;
+import effyis.rdv.payment.entity.Debt;
+import effyis.rdv.payment.enumeration.ReturnCode;
+import effyis.rdv.payment.util.exception.ExceptionFactory;
 
 /**
  *
@@ -24,18 +27,20 @@ public class SecurityUtil {
 	}
 
 	public static String calculateHashMAC(String aquereurID, String canalID, String dateServeur, String modeID,
-			String refTxSysPmt, String typeCanal, String secret) throws NoSuchAlgorithmException {
+			String creancierID, String refTxSysPmt, String typeCanal, String secret) throws NoSuchAlgorithmException {
 
 		StringBuilder str = new StringBuilder(aquereurID);
-		str.append(canalID).append(dateServeur).append(modeID).append(refTxSysPmt).append(typeCanal).append(secret);
+		refTxSysPmt = refTxSysPmt == null ? "" : refTxSysPmt;
+		str.append(canalID).append(dateServeur).append(modeID).append(creancierID).append(refTxSysPmt).append(typeCanal)
+				.append(secret);
 		String MAC = str.toString().replace(" ", "");
 		byte[] hashMAC = SecurityUtil.calculateHashInMD5(MAC);
 		return Base64.getEncoder().encodeToString(hashMAC);
 	}
 
 	// name + code...? code + name ...? code... + name ...?
-	public static String calculateSendMAC(String codeRetour, String dateServeur, List<BillerDTO> billers, String secret)
-			throws NoSuchAlgorithmException {
+	public static String calculateBillersSendMAC(String codeRetour, String dateServeur, List<BillerDTO> billers,
+			String secret) throws NoSuchAlgorithmException {
 		StringBuilder str = new StringBuilder(codeRetour);
 		str.append(dateServeur);
 		List<String> concateCodeNameBiller = billers.stream()
@@ -45,5 +50,27 @@ public class SecurityUtil {
 		str.append(secret);
 		byte[] hashMAC = SecurityUtil.calculateHashInMD5(str.toString());
 		return Base64.getEncoder().encodeToString(hashMAC);
+	}
+
+	public static String calculateDebtsSendMAC(String codeRetour, String dateServeur, List<Debt> debts, String secret)
+			throws NoSuchAlgorithmException {
+		StringBuilder str = new StringBuilder(codeRetour);
+		str.append(dateServeur);
+		List<String> concateCodeNameDebt = debts.stream().map(debt -> debt.getDebtCode() + debt.getDebtName())
+				.collect(Collectors.toList());
+		concateCodeNameDebt.forEach(c -> str.append(c));
+		str.append(debts.size());
+		str.append(secret);
+		byte[] hashMAC = SecurityUtil.calculateHashInMD5(str.toString());
+		return Base64.getEncoder().encodeToString(hashMAC);
+	}
+
+	public static boolean isMACValid(String MAC, String calculatedMAC, String exceptionType) throws Exception {
+		if (MAC.equals(calculatedMAC)) {
+			return true;
+		} else {
+			ExceptionFactory factory = new ExceptionFactory();
+			throw factory.getException("billers", ReturnCode.C100.getReturnCode(), ReturnCode.C100.getComment());
+		}
 	}
 }

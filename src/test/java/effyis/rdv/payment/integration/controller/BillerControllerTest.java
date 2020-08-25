@@ -39,7 +39,7 @@ public class BillerControllerTest {
 	public void getAllBillersTest() throws Exception {
 
 		String MAC = URLEncoder.encode(
-				SecurityUtil.calculateHashMAC("BCP", "15", "20200813172654", "5", "123456789123", "2", this.secret),
+				SecurityUtil.calculateHashMAC("BCP", "15", "20200813172654", "5", "", "123456789123", "2", this.secret),
 				StandardCharsets.UTF_8);
 		String url = "/EFFYIS/api/cmi/creanciers?typeCanal=2&aquereurID=BCP&modeID=5&canalID=15&dateServeur=20200813172654&refTxSysPmt=123456789123&MAC="
 				+ MAC;
@@ -47,7 +47,7 @@ public class BillerControllerTest {
 		MvcResult result = this.mockMvc.perform(MockMvcRequestBuilders.get(url)).andReturn();
 		BillersResponseDTO response = mapper.readValue(result.getResponse().getContentAsString(),
 				BillersResponseDTO.class);
-		String expectedMac = SecurityUtil.calculateSendMAC(response.getCodeRetour(), response.getDateServeur(),
+		String expectedMac = SecurityUtil.calculateBillersSendMAC(response.getCodeRetour(), response.getDateServeur(),
 				response.getListeCreanciers(), this.secret);
 		Assertions.assertEquals(ReturnCode.C000.getReturnCode(), response.getCodeRetour());
 		Assertions.assertEquals(ReturnCode.C000.getComment(), response.getMsg());
@@ -64,7 +64,7 @@ public class BillerControllerTest {
 		MvcResult result = this.mockMvc.perform(MockMvcRequestBuilders.get(url)).andReturn();
 		BillersResponseDTO response = mapper.readValue(result.getResponse().getContentAsString(),
 				BillersResponseDTO.class);
-		String expectedMac = SecurityUtil.calculateSendMAC(response.getCodeRetour(), response.getDateServeur(),
+		String expectedMac = SecurityUtil.calculateBillersSendMAC(response.getCodeRetour(), response.getDateServeur(),
 				response.getListeCreanciers(), this.secret);
 		Assertions.assertEquals(ReturnCode.C100.getReturnCode(), response.getCodeRetour());
 		Assertions.assertEquals(ReturnCode.C100.getComment(), response.getMsg());
@@ -77,7 +77,7 @@ public class BillerControllerTest {
 	public void getBillersByCategoryTest() throws Exception {
 
 		String MAC = URLEncoder.encode(
-				SecurityUtil.calculateHashMAC("BCP", "15", "20200813172654", "5", "123456789123", "2", this.secret),
+				SecurityUtil.calculateHashMAC("BCP", "15", "20200813172654", "5", "", "123456789123", "2", this.secret),
 				StandardCharsets.UTF_8);
 		String url = "/EFFYIS/api/cmi/creanciers?typeCanal=2&aquereurID=BCP&modeID=5&canalID=15&dateServeur=20200813172654&refTxSysPmt=123456789123&MAC="
 				+ MAC + "&categorieCreance=1";
@@ -85,7 +85,7 @@ public class BillerControllerTest {
 		MvcResult result = this.mockMvc.perform(MockMvcRequestBuilders.get(url)).andReturn();
 		BillersResponseDTO response = mapper.readValue(result.getResponse().getContentAsString(),
 				BillersResponseDTO.class);
-		String expectedMac = SecurityUtil.calculateSendMAC(response.getCodeRetour(), response.getDateServeur(),
+		String expectedMac = SecurityUtil.calculateBillersSendMAC(response.getCodeRetour(), response.getDateServeur(),
 				response.getListeCreanciers(), this.secret);
 		Assertions.assertEquals(ReturnCode.C000.getReturnCode(), response.getCodeRetour());
 		Assertions.assertEquals(ReturnCode.C000.getComment(), response.getMsg());
@@ -98,7 +98,7 @@ public class BillerControllerTest {
 	public void getBillersByCategoryInexistantTest() throws Exception {
 
 		String MAC = URLEncoder.encode(
-				SecurityUtil.calculateHashMAC("BCP", "15", "20200813172654", "5", "123456789123", "2", this.secret),
+				SecurityUtil.calculateHashMAC("BCP", "15", "20200813172654", "5", "", "123456789123", "2", this.secret),
 				StandardCharsets.UTF_8);
 		String url = "/EFFYIS/api/cmi/creanciers?typeCanal=2&aquereurID=BCP&modeID=5&canalID=15&dateServeur=20200813172654&refTxSysPmt=123456789123&MAC="
 				+ MAC + "&categorieCreance=5";
@@ -116,7 +116,7 @@ public class BillerControllerTest {
 	public void getBillersByCanalInexistantTest() throws Exception {
 
 		String MAC = URLEncoder.encode(
-				SecurityUtil.calculateHashMAC("BCP", "15", "20200813172654", "5", "123456789123", "5", this.secret),
+				SecurityUtil.calculateHashMAC("BCP", "15", "20200813172654", "5", "", "123456789123", "5", this.secret),
 				StandardCharsets.UTF_8);
 		String url = "/EFFYIS/api/cmi/creanciers?typeCanal=5&aquereurID=BCP&modeID=5&canalID=15&dateServeur=20200813172654&refTxSysPmt=123456789123&MAC="
 				+ MAC + "&categorieCreance=1";

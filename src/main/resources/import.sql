@@ -1,13 +1,20 @@
 insert into biller (biller_name, biller_code, biller_description, logo_path, website, category) values ('REDAL', '0000', 'REDAL SERVICE', 'http://localhost:8080/redal_logo.jpg','https://redal.com','1');
 insert into biller (biller_name, biller_code, biller_description, logo_path, website, category) values ('ORANGE', '0002', 'Recharge telephonique', 'http://localhost:8080/orange-logo.png','https://orange.com','2');
-insert into biller (biller_name, biller_code, biller_description, logo_path, website, category) values ('ORANGE', '0002', 'Paiement de facture', 'http://localhost:8080/orange-logo.png','https://orange.com','2');
-insert into biller (biller_name, biller_code, biller_description, logo_path, website, category) values ('INWI', '0002', 'Recharge telephonique', 'http://localhost:8080/inwi-logo.jpg','https://inwi.com','2');
-insert into biller (biller_name, biller_code, biller_description, logo_path, website, category) values ('RAM', '0003', 'Achat Ticket Avion', 'http://localhost:8080/ram-logo.png','https://ram.com','3');
+insert into biller (biller_name, biller_code, biller_description, logo_path, website, category) values ('ORANGE', '0006', 'Paiement de facture', 'http://localhost:8080/orange-logo.png','https://orange.com','2');
+insert into biller (biller_name, biller_code, biller_description, logo_path, website, category) values ('INWI', '0008', 'Recharge telephonique', 'http://localhost:8080/inwi-logo.jpg','https://inwi.com','2');
+insert into biller (biller_name, biller_code, biller_description, logo_path, website, category) values ('RAM', '0007', 'Achat Ticket Avion', 'http://localhost:8080/ram-logo.png','https://ram.com','3');
 insert into biller (biller_name, biller_code, biller_description, logo_path, website, category) values ('ONCF', '0003', 'Achat Ticket de Train', 'http://localhost:8080/oncf-logo.png','https://oncf.com','3');
-insert into biller (biller_name, biller_code, biller_description, logo_path, website, category) values ('DGI', '0001', 'Paiement Impots', 'http://localhost:8080/dgi-logo.jpg','https://fgi.com','4');
-insert into biller (biller_name, biller_code, biller_description, logo_path, website, category) values ('MAROC TELECOM', '0002', 'Recharge telephonique', 'http://localhost:8080/maroc-telecom-logo.jpg','https://maroctelecom.com','2');
-insert into biller (biller_name, biller_code, biller_description, logo_path, website, category) values ('AMENDIS', '0000', 'AMENDIS SERVICE', 'http://localhost:8080/amendis-logo.jpg','https://amendis.com','1');
-insert into biller (biller_name, biller_code, biller_description, logo_path, website, category) values ('ONEE', '0000', 'ONEE SERVICE', 'http://localhost:8080/onee-logo.png','https://onee.com','1');
+insert into biller (biller_name, biller_code, biller_description, logo_path, website, category) values ('DGI', '0001', 'Paiement Impots', 'http://localhost:8080/dgi-logo.jpg','https://dgi.com','4');
+insert into biller (biller_name, biller_code, biller_description, logo_path, website, category) values ('MAROC TELECOM', '0009', 'Recharge telephonique', 'http://localhost:8080/maroc-telecom-logo.jpg','https://maroctelecom.com','2');
+insert into biller (biller_name, biller_code, biller_description, logo_path, website, category) values ('AMENDIS', '0010', 'AMENDIS SERVICE', 'http://localhost:8080/amendis-logo.jpg','https://amendis.com','1');
+insert into biller (biller_name, biller_code, biller_description, logo_path, website, category) values ('ONEE', '0004', 'ONEE SERVICE', 'http://localhost:8080/onee-logo.png','https://onee.com','1');
+
+insert into debt (debt_code, debt_name, biller_id) values ('01','Vignette',7);
+insert into debt (debt_code, debt_name, biller_id) values ('02','Impots sur revenu',7);
+insert into debt (debt_code, debt_name, biller_id) values ('03','Impots immobilier',7);
+insert into debt (debt_code, debt_name, biller_id) values ('01','facture mobile',3);
+insert into debt (debt_code, debt_name, biller_id) values ('02','facture fix',3);
+insert into debt (debt_code, debt_name, biller_id) values ('03','facture Internet',3)
 
 insert into biller_canal (biller, canal) values (1,'1');
 insert into biller_canal (biller, canal) values (1,'2');

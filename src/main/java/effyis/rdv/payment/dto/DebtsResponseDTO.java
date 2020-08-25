@@ -2,18 +2,20 @@ package effyis.rdv.payment.dto;
 
 import java.util.List;
 
+import effyis.rdv.payment.entity.Debt;
+
 /**
  *
  * @author EL KOTB ZAKARIA
  *
  */
-public class BillersResponseDTO {
+public class DebtsResponseDTO {
 
 	private String dateServeur;
 	private String codeRetour;
 	private String msg;
-	private int nbreCreancier;
-	private List<BillerDTO> listeCreanciers;
+	private int nbreCreance;
+	private List<Debt> listeCreance;
 	private String MAC;
 
 	public String getDateServeur() {
@@ -40,20 +42,12 @@ public class BillersResponseDTO {
 		this.msg = msg;
 	}
 
-	public int getNbreCreancier() {
-		return this.nbreCreancier;
+	public int getNbreCreance() {
+		return this.nbreCreance;
 	}
 
-	public void setNbreCreancier(int nbreCreancier) {
-		this.nbreCreancier = nbreCreancier;
-	}
-
-	public List<BillerDTO> getListeCreanciers() {
-		return this.listeCreanciers;
-	}
-
-	public void setListeCreanciers(List<BillerDTO> listeCreanciers) {
-		this.listeCreanciers = listeCreanciers;
+	public void setNbreCreance(int nbreCreance) {
+		this.nbreCreance = nbreCreance;
 	}
 
 	public String getMAC() {
@@ -64,9 +58,17 @@ public class BillersResponseDTO {
 		this.MAC = mAC;
 	}
 
-	public BillersResponseDTO() {
+	public DebtsResponseDTO() {
 		super();
 		// TODO Auto-generated constructor stub
+	}
+
+	public List<Debt> getListeCreance() {
+		return this.listeCreance;
+	}
+
+	public void setListeCreance(List<Debt> listeCreance) {
+		this.listeCreance = listeCreance;
 	}
 
 }

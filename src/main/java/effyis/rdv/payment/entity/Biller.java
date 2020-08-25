@@ -11,8 +11,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonProperty.Access;
 
@@ -53,6 +55,9 @@ public class Biller {
 	@Column(name = "canal")
 	@JsonProperty(access = Access.WRITE_ONLY)
 	private List<Canal> canals;
+	@OneToMany(mappedBy = "biller", orphanRemoval = true)
+	@JsonIgnore()
+	private List<Debt> debts;
 
 	public Biller() {
 		super();
@@ -119,6 +124,18 @@ public class Biller {
 	}
 
 	public void setCanal(List<Canal> canals) {
+		this.canals = canals;
+	}
+
+	public List<Debt> getDebts() {
+		return this.debts;
+	}
+
+	public void setDebts(List<Debt> debts) {
+		this.debts = debts;
+	}
+
+	public void setCanals(List<Canal> canals) {
 		this.canals = canals;
 	}
 

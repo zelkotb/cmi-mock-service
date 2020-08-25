@@ -15,6 +15,8 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import effyis.rdv.payment.dto.BillerDTO;
 import effyis.rdv.payment.dto.BillersResponseDTO;
+import effyis.rdv.payment.dto.DebtsResponseDTO;
+import effyis.rdv.payment.entity.Debt;
 import effyis.rdv.payment.util.DateUtil;
 import effyis.rdv.payment.util.SecurityUtil;
 
@@ -34,11 +36,18 @@ public class GlobalExceptionHandler {
 	@Value("${security.hash.secret}")
 	private String secret;
 
-	@ExceptionHandler(CustomException.class)
+	@ExceptionHandler(BillersException.class)
 	@ResponseStatus(code = HttpStatus.OK)
-	public BillersResponseDTO handleCustomException(CustomException e) throws NoSuchAlgorithmException {
+	public BillersResponseDTO handleBillersException(BillersException e) throws NoSuchAlgorithmException {
 		GlobalExceptionHandler.LOGGER.error(e.getMessage(), e);
 		return buildBillerResponse(e);
+	}
+
+	@ExceptionHandler(DebtsException.class)
+	@ResponseStatus(code = HttpStatus.OK)
+	public DebtsResponseDTO handleDebtsException(DebtsException e) throws NoSuchAlgorithmException {
+		GlobalExceptionHandler.LOGGER.error(e.getMessage(), e);
+		return buildDebtsResponse(e);
 	}
 
 	@ExceptionHandler(Exception.class)
@@ -48,7 +57,7 @@ public class GlobalExceptionHandler {
 
 	}
 
-	private BillersResponseDTO buildBillerResponse(CustomException e) throws NoSuchAlgorithmException {
+	private BillersResponseDTO buildBillerResponse(BillersException e) throws NoSuchAlgorithmException {
 		BillersResponseDTO responseDTO = new BillersResponseDTO();
 		String dateServeur = DateUtil.formatDate(this.dateFormat, new Date());
 		List<BillerDTO> billers = new ArrayList<>();
@@ -57,7 +66,20 @@ public class GlobalExceptionHandler {
 		responseDTO.setMsg(e.getMessage());
 		responseDTO.setNbreCreancier(0);
 		responseDTO.setListeCreanciers(billers);
-		responseDTO.setMAC(SecurityUtil.calculateSendMAC(e.getReturnCode(), dateServeur, billers, this.secret));
+		responseDTO.setMAC(SecurityUtil.calculateBillersSendMAC(e.getReturnCode(), dateServeur, billers, this.secret));
+		return responseDTO;
+	}
+
+	private DebtsResponseDTO buildDebtsResponse(DebtsException e) throws NoSuchAlgorithmException {
+		DebtsResponseDTO responseDTO = new DebtsResponseDTO();
+		String dateServeur = DateUtil.formatDate(this.dateFormat, new Date());
+		List<Debt> debts = new ArrayList<>();
+		responseDTO.setDateServeur(dateServeur);
+		responseDTO.setCodeRetour(e.getReturnCode());
+		responseDTO.setMsg(e.getMessage());
+		responseDTO.setNbreCreance(0);
+		responseDTO.setListeCreance(debts);
+		responseDTO.setMAC(SecurityUtil.calculateDebtsSendMAC(e.getReturnCode(), dateServeur, debts, this.secret));
 		return responseDTO;
 	}
 

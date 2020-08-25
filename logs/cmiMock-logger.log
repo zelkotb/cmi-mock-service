@@ -1,83 +1,79 @@
-[2020-08-19 10:08:19.972] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - Starting CmiMockServiceApplication on Bolt with PID 4596 (C:\Users\user\eclipse-workspace\CMIMock\target\classes started by EL KOTB ZAKARIA in C:\Users\user\eclipse-workspace\CMIMock)
-[2020-08-19 10:08:19.992] [cmiMock] [restartedMain] [] [DEBUG] e.r.p.CmiMockServiceApplication - Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
-[2020-08-19 10:08:19.993] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - No active profile set, falling back to default profiles: default
-[2020-08-19 10:08:20.080] [cmiMock] [restartedMain] [] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[2020-08-19 10:08:20.080] [cmiMock] [restartedMain] [] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[2020-08-19 10:08:21.415] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-[2020-08-19 10:08:21.543] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 112ms. Found 1 JPA repository interfaces.
-[2020-08-19 10:08:22.687] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9000 (http)
-[2020-08-19 10:08:22.701] [cmiMock] [restartedMain] [] [INFO] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
-[2020-08-19 10:08:22.702] [cmiMock] [restartedMain] [] [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
-[2020-08-19 10:08:22.702] [cmiMock] [restartedMain] [] [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
-[2020-08-19 10:08:22.882] [cmiMock] [restartedMain] [] [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[2020-08-19 10:08:22.883] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2802 ms
-[2020-08-19 10:08:23.061] [cmiMock] [restartedMain] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-[2020-08-19 10:08:23.315] [cmiMock] [restartedMain] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-[2020-08-19 10:08:23.329] [cmiMock] [restartedMain] [] [INFO] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/cmi'
-[2020-08-19 10:08:23.600] [cmiMock] [restartedMain] [] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-[2020-08-19 10:08:23.692] [cmiMock] [task-1] [] [INFO] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[2020-08-19 10:08:23.775] [cmiMock] [restartedMain] [] [WARN] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[2020-08-19 10:08:23.796] [cmiMock] [task-1] [] [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.18.Final
-[2020-08-19 10:08:24.095] [cmiMock] [task-1] [] [INFO] o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-[2020-08-19 10:08:24.309] [cmiMock] [task-1] [] [INFO] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-[2020-08-19 10:08:25.453] [cmiMock] [task-1] [] [INFO] o.h.t.s.internal.SchemaCreatorImpl - HHH000476: Executing import script 'file:/C:/Users/user/eclipse-workspace/CMIMock/target/classes/import.sql'
-[2020-08-19 10:08:25.490] [cmiMock] [task-1] [] [INFO] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[2020-08-19 10:08:25.500] [cmiMock] [task-1] [] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[2020-08-19 10:08:25.531] [cmiMock] [task-2] [] [INFO] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[2020-08-19 10:08:25.649] [cmiMock] [restartedMain] [] [INFO] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
-[2020-08-19 10:08:25.728] [cmiMock] [restartedMain] [] [INFO] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9000"]
-[2020-08-19 10:08:25.814] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9000 (http) with context path ''
-[2020-08-19 10:08:25.818] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
-[2020-08-19 10:08:26.344] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
-[2020-08-19 10:08:26.376] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - Started CmiMockServiceApplication in 7.023 seconds (JVM running for 9.008)
-[2020-08-19 10:13:09.801] [cmiMock] [http-nio-9000-exec-1] [] [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-[2020-08-19 10:13:09.801] [cmiMock] [http-nio-9000-exec-1] [] [INFO] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-[2020-08-19 10:13:09.812] [cmiMock] [http-nio-9000-exec-1] [] [INFO] o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
-[2020-08-19 10:13:25.364] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
-[2020-08-19 10:13:26.287] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[2020-08-19 10:13:26.290] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-[2020-08-19 10:13:26.294] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-[2020-08-19 10:13:26.304] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-[2020-08-19 10:16:27.627] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - Starting CmiMockServiceApplication on Bolt with PID 9936 (C:\Users\user\eclipse-workspace\CMIMock\target\classes started by EL KOTB ZAKARIA in C:\Users\user\eclipse-workspace\CMIMock)
-[2020-08-19 10:16:27.630] [cmiMock] [restartedMain] [] [DEBUG] e.r.p.CmiMockServiceApplication - Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
-[2020-08-19 10:16:27.632] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - No active profile set, falling back to default profiles: default
-[2020-08-19 10:16:27.707] [cmiMock] [restartedMain] [] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[2020-08-19 10:16:27.708] [cmiMock] [restartedMain] [] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[2020-08-19 10:16:29.236] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-[2020-08-19 10:16:29.349] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 101ms. Found 1 JPA repository interfaces.
-[2020-08-19 10:16:30.307] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9000 (http)
-[2020-08-19 10:16:30.322] [cmiMock] [restartedMain] [] [INFO] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
-[2020-08-19 10:16:30.323] [cmiMock] [restartedMain] [] [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
-[2020-08-19 10:16:30.324] [cmiMock] [restartedMain] [] [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
-[2020-08-19 10:16:30.511] [cmiMock] [restartedMain] [] [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[2020-08-19 10:16:30.512] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2804 ms
-[2020-08-19 10:16:30.681] [cmiMock] [restartedMain] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-[2020-08-19 10:16:30.869] [cmiMock] [restartedMain] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-[2020-08-19 10:16:30.879] [cmiMock] [restartedMain] [] [INFO] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/cmi'
-[2020-08-19 10:16:31.120] [cmiMock] [restartedMain] [] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-[2020-08-19 10:16:31.194] [cmiMock] [task-1] [] [INFO] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[2020-08-19 10:16:31.283] [cmiMock] [restartedMain] [] [WARN] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[2020-08-19 10:16:31.289] [cmiMock] [task-1] [] [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.18.Final
-[2020-08-19 10:16:31.503] [cmiMock] [task-1] [] [INFO] o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-[2020-08-19 10:16:31.675] [cmiMock] [task-1] [] [INFO] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-[2020-08-19 10:16:32.654] [cmiMock] [task-1] [] [INFO] o.h.t.s.internal.SchemaCreatorImpl - HHH000476: Executing import script 'file:/C:/Users/user/eclipse-workspace/CMIMock/target/classes/import.sql'
-[2020-08-19 10:16:32.690] [cmiMock] [task-1] [] [INFO] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[2020-08-19 10:16:32.704] [cmiMock] [task-1] [] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[2020-08-19 10:16:32.735] [cmiMock] [task-2] [] [INFO] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[2020-08-19 10:16:32.842] [cmiMock] [restartedMain] [] [INFO] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
-[2020-08-19 10:16:32.903] [cmiMock] [restartedMain] [] [INFO] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9000"]
-[2020-08-19 10:16:32.942] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9000 (http) with context path ''
-[2020-08-19 10:16:32.945] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
-[2020-08-19 10:16:33.402] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
-[2020-08-19 10:16:33.427] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - Started CmiMockServiceApplication in 6.526 seconds (JVM running for 8.231)
-[2020-08-19 10:16:37.000] [cmiMock] [http-nio-9000-exec-1] [] [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-[2020-08-19 10:16:37.000] [cmiMock] [http-nio-9000-exec-1] [] [INFO] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-[2020-08-19 10:16:37.012] [cmiMock] [http-nio-9000-exec-1] [] [INFO] o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
-[2020-08-19 10:16:58.319] [cmiMock] [http-nio-9000-exec-2] [] [ERROR] e.r.p.u.e.GlobalExceptionHandler - CATEGORY INEXISTANT
-effyis.rdv.payment.util.exception.CustomException: CATEGORY INEXISTANT
-	at effyis.rdv.payment.service.impl.BillerServiceImpl.getCategory(BillerServiceImpl.java:95)
-	at effyis.rdv.payment.service.impl.BillerServiceImpl.getBillers(BillerServiceImpl.java:53)
-	at effyis.rdv.payment.controller.BillerController.getBillers(BillerController.java:34)
+[2020-08-25 09:28:14.379] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - Starting CmiMockServiceApplication on Bolt with PID 16416 (C:\Users\user\eclipse-workspace\CMIMock\target\classes started by EL KOTB ZAKARIA in C:\Users\user\eclipse-workspace\CMIMock)
+[2020-08-25 09:28:14.386] [cmiMock] [restartedMain] [] [DEBUG] e.r.p.CmiMockServiceApplication - Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+[2020-08-25 09:28:14.386] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - No active profile set, falling back to default profiles: default
+[2020-08-25 09:28:14.448] [cmiMock] [restartedMain] [] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2020-08-25 09:28:14.448] [cmiMock] [restartedMain] [] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2020-08-25 09:28:16.098] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+[2020-08-25 09:28:16.195] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 89ms. Found 2 JPA repository interfaces.
+[2020-08-25 09:28:16.869] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9000 (http)
+[2020-08-25 09:28:16.878] [cmiMock] [restartedMain] [] [INFO] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
+[2020-08-25 09:28:16.879] [cmiMock] [restartedMain] [] [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2020-08-25 09:28:16.880] [cmiMock] [restartedMain] [] [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+[2020-08-25 09:28:17.001] [cmiMock] [restartedMain] [] [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2020-08-25 09:28:17.001] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2553 ms
+[2020-08-25 09:28:17.149] [cmiMock] [restartedMain] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2020-08-25 09:28:17.352] [cmiMock] [restartedMain] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2020-08-25 09:28:17.362] [cmiMock] [restartedMain] [] [INFO] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/cmi'
+[2020-08-25 09:28:17.716] [cmiMock] [restartedMain] [] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[2020-08-25 09:28:17.815] [cmiMock] [task-1] [] [INFO] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2020-08-25 09:28:17.914] [cmiMock] [restartedMain] [] [WARN] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2020-08-25 09:28:17.920] [cmiMock] [task-1] [] [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.18.Final
+[2020-08-25 09:28:18.195] [cmiMock] [task-1] [] [INFO] o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2020-08-25 09:28:18.408] [cmiMock] [task-1] [] [INFO] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[2020-08-25 09:28:19.257] [cmiMock] [task-1] [] [INFO] o.h.t.s.internal.SchemaCreatorImpl - HHH000476: Executing import script 'file:/C:/Users/user/eclipse-workspace/CMIMock/target/classes/import.sql'
+[2020-08-25 09:28:19.296] [cmiMock] [task-1] [] [INFO] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2020-08-25 09:28:19.303] [cmiMock] [task-1] [] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2020-08-25 09:28:19.322] [cmiMock] [task-2] [] [INFO] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[2020-08-25 09:28:19.387] [cmiMock] [restartedMain] [] [INFO] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+[2020-08-25 09:28:19.419] [cmiMock] [restartedMain] [] [INFO] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9000"]
+[2020-08-25 09:28:19.471] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9000 (http) with context path ''
+[2020-08-25 09:28:19.473] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+[2020-08-25 09:28:19.789] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+[2020-08-25 09:28:19.807] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - Started CmiMockServiceApplication in 6.209 seconds (JVM running for 8.895)
+[2020-08-25 09:28:42.801] [cmiMock] [http-nio-9000-exec-2] [] [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2020-08-25 09:28:42.802] [cmiMock] [http-nio-9000-exec-2] [] [INFO] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2020-08-25 09:28:42.811] [cmiMock] [http-nio-9000-exec-2] [] [INFO] o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+[2020-08-25 09:29:10.183] [cmiMock] [Thread-5] [] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2020-08-25 09:29:10.186] [cmiMock] [Thread-5] [] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[2020-08-25 09:29:10.189] [cmiMock] [Thread-5] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2020-08-25 09:29:10.197] [cmiMock] [Thread-5] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2020-08-25 09:29:10.370] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - Starting CmiMockServiceApplication on Bolt with PID 16416 (C:\Users\user\eclipse-workspace\CMIMock\target\classes started by EL KOTB ZAKARIA in C:\Users\user\eclipse-workspace\CMIMock)
+[2020-08-25 09:29:10.371] [cmiMock] [restartedMain] [] [DEBUG] e.r.p.CmiMockServiceApplication - Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+[2020-08-25 09:29:10.371] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - No active profile set, falling back to default profiles: default
+[2020-08-25 09:29:10.790] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+[2020-08-25 09:29:10.831] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40ms. Found 2 JPA repository interfaces.
+[2020-08-25 09:29:10.950] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9000 (http)
+[2020-08-25 09:29:10.950] [cmiMock] [restartedMain] [] [INFO] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
+[2020-08-25 09:29:10.951] [cmiMock] [restartedMain] [] [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2020-08-25 09:29:10.951] [cmiMock] [restartedMain] [] [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+[2020-08-25 09:29:10.998] [cmiMock] [restartedMain] [] [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2020-08-25 09:29:10.998] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 623 ms
+[2020-08-25 09:29:11.048] [cmiMock] [restartedMain] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+[2020-08-25 09:29:11.125] [cmiMock] [restartedMain] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+[2020-08-25 09:29:11.125] [cmiMock] [restartedMain] [] [INFO] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/cmi'
+[2020-08-25 09:29:11.176] [cmiMock] [restartedMain] [] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[2020-08-25 09:29:11.202] [cmiMock] [task-1] [] [INFO] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2020-08-25 09:29:11.214] [cmiMock] [task-1] [] [INFO] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[2020-08-25 09:29:11.246] [cmiMock] [restartedMain] [] [WARN] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2020-08-25 09:29:11.461] [cmiMock] [task-1] [] [INFO] o.h.t.s.internal.SchemaCreatorImpl - HHH000476: Executing import script 'file:/C:/Users/user/eclipse-workspace/CMIMock/target/classes/import.sql'
+[2020-08-25 09:29:11.505] [cmiMock] [task-1] [] [INFO] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2020-08-25 09:29:11.506] [cmiMock] [task-1] [] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2020-08-25 09:29:11.540] [cmiMock] [task-2] [] [INFO] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[2020-08-25 09:29:11.623] [cmiMock] [restartedMain] [] [INFO] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+[2020-08-25 09:29:11.646] [cmiMock] [restartedMain] [] [INFO] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9000"]
+[2020-08-25 09:29:11.650] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9000 (http) with context path ''
+[2020-08-25 09:29:11.651] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+[2020-08-25 09:29:11.753] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+[2020-08-25 09:29:11.764] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - Started CmiMockServiceApplication in 1.482 seconds (JVM running for 60.852)
+[2020-08-25 09:29:11.769] [cmiMock] [restartedMain] [] [INFO] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[2020-08-25 09:29:32.435] [cmiMock] [http-nio-9000-exec-1] [] [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2020-08-25 09:29:32.436] [cmiMock] [http-nio-9000-exec-1] [] [INFO] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2020-08-25 09:29:32.442] [cmiMock] [http-nio-9000-exec-1] [] [INFO] o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+[2020-08-25 09:29:32.461] [cmiMock] [http-nio-9000-exec-1] [] [ERROR] e.r.p.u.e.GlobalExceptionHandler - CANAL INEXISTANT
+effyis.rdv.payment.util.exception.DebtsException: CANAL INEXISTANT
+	at effyis.rdv.payment.service.impl.DebtServiceImpl.getCanal(DebtServiceImpl.java:58)
+	at effyis.rdv.payment.service.impl.DebtServiceImpl.getDebts(DebtServiceImpl.java:51)
+	at effyis.rdv.payment.controller.DebtController.getDebts(DebtController.java:33)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -132,680 +128,49 @@ effyis.rdv.payment.util.exception.CustomException: CATEGORY INEXISTANT
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-[2020-08-19 10:16:58.325] [cmiMock] [http-nio-9000-exec-2] [] [WARN] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [effyis.rdv.payment.util.exception.CustomException: CATEGORY INEXISTANT]
-[2020-08-19 10:17:01.327] [cmiMock] [http-nio-9000-exec-6] [] [ERROR] e.r.p.u.e.GlobalExceptionHandler - CATEGORY INEXISTANT
-effyis.rdv.payment.util.exception.CustomException: CATEGORY INEXISTANT
-	at effyis.rdv.payment.service.impl.BillerServiceImpl.getCategory(BillerServiceImpl.java:95)
-	at effyis.rdv.payment.service.impl.BillerServiceImpl.getBillers(BillerServiceImpl.java:53)
-	at effyis.rdv.payment.controller.BillerController.getBillers(BillerController.java:34)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-[2020-08-19 10:17:01.335] [cmiMock] [http-nio-9000-exec-6] [] [WARN] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [effyis.rdv.payment.util.exception.CustomException: CATEGORY INEXISTANT]
-[2020-08-19 10:17:04.016] [cmiMock] [http-nio-9000-exec-4] [] [ERROR] e.r.p.u.e.GlobalExceptionHandler - CATEGORY INEXISTANT
-effyis.rdv.payment.util.exception.CustomException: CATEGORY INEXISTANT
-	at effyis.rdv.payment.service.impl.BillerServiceImpl.getCategory(BillerServiceImpl.java:95)
-	at effyis.rdv.payment.service.impl.BillerServiceImpl.getBillers(BillerServiceImpl.java:53)
-	at effyis.rdv.payment.controller.BillerController.getBillers(BillerController.java:34)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-[2020-08-19 10:17:04.025] [cmiMock] [http-nio-9000-exec-4] [] [WARN] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [effyis.rdv.payment.util.exception.CustomException: CATEGORY INEXISTANT]
-[2020-08-19 10:17:22.065] [cmiMock] [http-nio-9000-exec-7] [] [ERROR] e.r.p.u.e.GlobalExceptionHandler - CATEGORY INEXISTANT
-effyis.rdv.payment.util.exception.CustomException: CATEGORY INEXISTANT
-	at effyis.rdv.payment.service.impl.BillerServiceImpl.getCategory(BillerServiceImpl.java:95)
-	at effyis.rdv.payment.service.impl.BillerServiceImpl.getBillers(BillerServiceImpl.java:53)
-	at effyis.rdv.payment.controller.BillerController.getBillers(BillerController.java:34)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-[2020-08-19 10:17:22.068] [cmiMock] [http-nio-9000-exec-7] [] [WARN] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [effyis.rdv.payment.util.exception.CustomException: CATEGORY INEXISTANT]
-[2020-08-19 10:17:32.154] [cmiMock] [http-nio-9000-exec-5] [] [ERROR] e.r.p.u.e.GlobalExceptionHandler - CATEGORY INEXISTANT
-effyis.rdv.payment.util.exception.CustomException: CATEGORY INEXISTANT
-	at effyis.rdv.payment.service.impl.BillerServiceImpl.getCategory(BillerServiceImpl.java:95)
-	at effyis.rdv.payment.service.impl.BillerServiceImpl.getBillers(BillerServiceImpl.java:53)
-	at effyis.rdv.payment.controller.BillerController.getBillers(BillerController.java:34)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-[2020-08-19 10:17:32.156] [cmiMock] [http-nio-9000-exec-5] [] [WARN] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [effyis.rdv.payment.util.exception.CustomException: CATEGORY INEXISTANT]
-[2020-08-19 10:17:52.023] [cmiMock] [http-nio-9000-exec-3] [] [ERROR] e.r.p.u.e.GlobalExceptionHandler - CATEGORY INEXISTANT
-effyis.rdv.payment.util.exception.CustomException: CATEGORY INEXISTANT
-	at effyis.rdv.payment.service.impl.BillerServiceImpl.getCategory(BillerServiceImpl.java:95)
-	at effyis.rdv.payment.service.impl.BillerServiceImpl.getBillers(BillerServiceImpl.java:53)
-	at effyis.rdv.payment.controller.BillerController.getBillers(BillerController.java:34)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-[2020-08-19 10:17:52.026] [cmiMock] [http-nio-9000-exec-3] [] [WARN] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [effyis.rdv.payment.util.exception.CustomException: CATEGORY INEXISTANT]
-[2020-08-19 10:52:34.236] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
-[2020-08-19 10:52:34.632] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[2020-08-19 10:52:34.635] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-[2020-08-19 10:52:34.639] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-[2020-08-19 10:52:34.655] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-[2020-08-19 13:19:50.574] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - Starting CmiMockServiceApplication on Bolt with PID 14164 (C:\Users\user\eclipse-workspace\CMIMock\target\classes started by EL KOTB ZAKARIA in C:\Users\user\eclipse-workspace\CMIMock)
-[2020-08-19 13:19:50.578] [cmiMock] [restartedMain] [] [DEBUG] e.r.p.CmiMockServiceApplication - Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
-[2020-08-19 13:19:50.579] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - No active profile set, falling back to default profiles: default
-[2020-08-19 13:19:50.682] [cmiMock] [restartedMain] [] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[2020-08-19 13:19:50.683] [cmiMock] [restartedMain] [] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[2020-08-19 13:19:53.988] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-[2020-08-19 13:19:54.108] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 109ms. Found 1 JPA repository interfaces.
-[2020-08-19 13:19:54.830] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9000 (http)
-[2020-08-19 13:19:54.841] [cmiMock] [restartedMain] [] [INFO] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
-[2020-08-19 13:19:54.842] [cmiMock] [restartedMain] [] [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
-[2020-08-19 13:19:54.843] [cmiMock] [restartedMain] [] [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
-[2020-08-19 13:19:55.047] [cmiMock] [restartedMain] [] [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[2020-08-19 13:19:55.048] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4363 ms
-[2020-08-19 13:19:55.205] [cmiMock] [restartedMain] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-[2020-08-19 13:19:55.372] [cmiMock] [restartedMain] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-[2020-08-19 13:19:55.382] [cmiMock] [restartedMain] [] [INFO] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/cmi'
-[2020-08-19 13:19:55.627] [cmiMock] [restartedMain] [] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-[2020-08-19 13:19:55.714] [cmiMock] [task-1] [] [INFO] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[2020-08-19 13:19:55.814] [cmiMock] [restartedMain] [] [WARN] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[2020-08-19 13:19:55.819] [cmiMock] [task-1] [] [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.18.Final
-[2020-08-19 13:19:56.117] [cmiMock] [task-1] [] [INFO] o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-[2020-08-19 13:19:56.368] [cmiMock] [task-1] [] [INFO] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-[2020-08-19 13:19:57.313] [cmiMock] [task-1] [] [INFO] o.h.t.s.internal.SchemaCreatorImpl - HHH000476: Executing import script 'file:/C:/Users/user/eclipse-workspace/CMIMock/target/classes/import.sql'
-[2020-08-19 13:19:57.350] [cmiMock] [task-1] [] [INFO] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[2020-08-19 13:19:57.359] [cmiMock] [task-1] [] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[2020-08-19 13:19:57.385] [cmiMock] [task-2] [] [INFO] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[2020-08-19 13:19:57.574] [cmiMock] [restartedMain] [] [INFO] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
-[2020-08-19 13:19:57.795] [cmiMock] [restartedMain] [] [INFO] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9000"]
-[2020-08-19 13:19:58.023] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9000 (http) with context path ''
-[2020-08-19 13:19:58.087] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
-[2020-08-19 13:19:59.284] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
-[2020-08-19 13:19:59.337] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - Started CmiMockServiceApplication in 9.91 seconds (JVM running for 13.069)
-[2020-08-19 13:20:53.768] [cmiMock] [http-nio-9000-exec-1] [] [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-[2020-08-19 13:20:53.768] [cmiMock] [http-nio-9000-exec-1] [] [INFO] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-[2020-08-19 13:20:53.775] [cmiMock] [http-nio-9000-exec-1] [] [INFO] o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
-[2020-08-19 13:39:19.199] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
-[2020-08-19 13:39:21.081] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[2020-08-19 13:39:21.083] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-[2020-08-19 13:39:21.092] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-[2020-08-19 13:39:21.161] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-[2020-08-19 13:49:29.410] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - Starting CmiMockServiceApplication on Bolt with PID 15492 (C:\Users\user\eclipse-workspace\CMIMock\target\classes started by EL KOTB ZAKARIA in C:\Users\user\eclipse-workspace\CMIMock)
-[2020-08-19 13:49:29.414] [cmiMock] [restartedMain] [] [DEBUG] e.r.p.CmiMockServiceApplication - Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
-[2020-08-19 13:49:29.415] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - No active profile set, falling back to default profiles: default
-[2020-08-19 13:49:29.571] [cmiMock] [restartedMain] [] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[2020-08-19 13:49:29.572] [cmiMock] [restartedMain] [] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[2020-08-19 13:49:33.131] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-[2020-08-19 13:49:33.455] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 286ms. Found 1 JPA repository interfaces.
-[2020-08-19 13:49:34.707] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9000 (http)
-[2020-08-19 13:49:34.718] [cmiMock] [restartedMain] [] [INFO] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
-[2020-08-19 13:49:34.720] [cmiMock] [restartedMain] [] [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
-[2020-08-19 13:49:34.721] [cmiMock] [restartedMain] [] [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
-[2020-08-19 13:49:34.973] [cmiMock] [restartedMain] [] [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[2020-08-19 13:49:34.974] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5402 ms
-[2020-08-19 13:49:35.166] [cmiMock] [restartedMain] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-[2020-08-19 13:49:35.336] [cmiMock] [restartedMain] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-[2020-08-19 13:49:35.345] [cmiMock] [restartedMain] [] [INFO] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/cmi'
-[2020-08-19 13:49:35.605] [cmiMock] [restartedMain] [] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-[2020-08-19 13:49:35.695] [cmiMock] [task-1] [] [INFO] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[2020-08-19 13:49:35.794] [cmiMock] [restartedMain] [] [WARN] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[2020-08-19 13:49:35.823] [cmiMock] [task-1] [] [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.18.Final
-[2020-08-19 13:49:36.120] [cmiMock] [task-1] [] [INFO] o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-[2020-08-19 13:49:36.385] [cmiMock] [task-1] [] [INFO] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-[2020-08-19 13:49:37.391] [cmiMock] [task-1] [] [INFO] o.h.t.s.internal.SchemaCreatorImpl - HHH000476: Executing import script 'file:/C:/Users/user/eclipse-workspace/CMIMock/target/classes/import.sql'
-[2020-08-19 13:49:37.433] [cmiMock] [task-1] [] [INFO] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[2020-08-19 13:49:37.444] [cmiMock] [task-1] [] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[2020-08-19 13:49:37.476] [cmiMock] [task-2] [] [INFO] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[2020-08-19 13:49:37.602] [cmiMock] [restartedMain] [] [INFO] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
-[2020-08-19 13:49:37.646] [cmiMock] [restartedMain] [] [INFO] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9000"]
-[2020-08-19 13:49:37.683] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9000 (http) with context path ''
-[2020-08-19 13:49:37.685] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
-[2020-08-19 13:49:38.099] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
-[2020-08-19 13:49:38.181] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - Started CmiMockServiceApplication in 9.919 seconds (JVM running for 14.588)
-[2020-08-19 13:49:46.332] [cmiMock] [http-nio-9000-exec-1] [] [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-[2020-08-19 13:49:46.332] [cmiMock] [http-nio-9000-exec-1] [] [INFO] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-[2020-08-19 13:49:46.350] [cmiMock] [http-nio-9000-exec-1] [] [INFO] o.s.web.servlet.DispatcherServlet - Completed initialization in 16 ms
-[2020-08-19 13:56:31.660] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
-[2020-08-19 13:56:32.182] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[2020-08-19 13:56:32.184] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-[2020-08-19 13:56:32.186] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-[2020-08-19 13:56:32.195] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-[2020-08-19 15:52:38.283] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - Starting CmiMockServiceApplication on Bolt with PID 13924 (C:\Users\user\eclipse-workspace\CMIMock\target\classes started by EL KOTB ZAKARIA in C:\Users\user\eclipse-workspace\CMIMock)
-[2020-08-19 15:52:38.287] [cmiMock] [restartedMain] [] [DEBUG] e.r.p.CmiMockServiceApplication - Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
-[2020-08-19 15:52:38.288] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - No active profile set, falling back to default profiles: default
-[2020-08-19 15:52:38.376] [cmiMock] [restartedMain] [] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[2020-08-19 15:52:38.377] [cmiMock] [restartedMain] [] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[2020-08-19 15:52:39.512] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-[2020-08-19 15:52:39.657] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 135ms. Found 1 JPA repository interfaces.
-[2020-08-19 15:52:40.593] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9000 (http)
-[2020-08-19 15:52:40.601] [cmiMock] [restartedMain] [] [INFO] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
-[2020-08-19 15:52:40.602] [cmiMock] [restartedMain] [] [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
-[2020-08-19 15:52:40.602] [cmiMock] [restartedMain] [] [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
-[2020-08-19 15:52:40.744] [cmiMock] [restartedMain] [] [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[2020-08-19 15:52:40.745] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2368 ms
-[2020-08-19 15:52:40.902] [cmiMock] [restartedMain] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-[2020-08-19 15:52:41.038] [cmiMock] [restartedMain] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-[2020-08-19 15:52:41.046] [cmiMock] [restartedMain] [] [INFO] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/cmi'
-[2020-08-19 15:52:41.235] [cmiMock] [restartedMain] [] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-[2020-08-19 15:52:41.301] [cmiMock] [task-1] [] [INFO] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[2020-08-19 15:52:41.371] [cmiMock] [restartedMain] [] [WARN] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[2020-08-19 15:52:41.382] [cmiMock] [task-1] [] [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.18.Final
-[2020-08-19 15:52:41.584] [cmiMock] [task-1] [] [INFO] o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-[2020-08-19 15:52:41.759] [cmiMock] [task-1] [] [INFO] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-[2020-08-19 15:52:42.519] [cmiMock] [task-1] [] [INFO] o.h.t.s.internal.SchemaCreatorImpl - HHH000476: Executing import script 'file:/C:/Users/user/eclipse-workspace/CMIMock/target/classes/import.sql'
-[2020-08-19 15:52:42.554] [cmiMock] [task-1] [] [INFO] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[2020-08-19 15:52:42.563] [cmiMock] [task-1] [] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[2020-08-19 15:52:42.589] [cmiMock] [task-2] [] [INFO] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[2020-08-19 15:52:42.654] [cmiMock] [restartedMain] [] [INFO] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
-[2020-08-19 15:52:42.683] [cmiMock] [restartedMain] [] [INFO] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9000"]
-[2020-08-19 15:52:42.706] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9000 (http) with context path ''
-[2020-08-19 15:52:42.708] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
-[2020-08-19 15:52:42.987] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
-[2020-08-19 15:52:43.002] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - Started CmiMockServiceApplication in 5.266 seconds (JVM running for 7.217)
-[2020-08-19 15:53:03.675] [cmiMock] [http-nio-9000-exec-1] [] [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-[2020-08-19 15:53:03.675] [cmiMock] [http-nio-9000-exec-1] [] [INFO] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-[2020-08-19 15:53:03.685] [cmiMock] [http-nio-9000-exec-1] [] [INFO] o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
-[2020-08-19 15:55:15.270] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
-[2020-08-19 15:55:16.036] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[2020-08-19 15:55:16.038] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-[2020-08-19 15:55:16.041] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-[2020-08-19 15:55:16.048] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-[2020-08-19 15:55:28.767] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - Starting CmiMockServiceApplication on Bolt with PID 12320 (C:\Users\user\eclipse-workspace\CMIMock\target\classes started by EL KOTB ZAKARIA in C:\Users\user\eclipse-workspace\CMIMock)
-[2020-08-19 15:55:28.770] [cmiMock] [restartedMain] [] [DEBUG] e.r.p.CmiMockServiceApplication - Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
-[2020-08-19 15:55:28.771] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - No active profile set, falling back to default profiles: default
-[2020-08-19 15:55:28.816] [cmiMock] [restartedMain] [] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[2020-08-19 15:55:28.816] [cmiMock] [restartedMain] [] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[2020-08-19 15:55:30.119] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-[2020-08-19 15:55:30.270] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 137ms. Found 1 JPA repository interfaces.
-[2020-08-19 15:55:30.969] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9000 (http)
-[2020-08-19 15:55:30.977] [cmiMock] [restartedMain] [] [INFO] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
-[2020-08-19 15:55:30.978] [cmiMock] [restartedMain] [] [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
-[2020-08-19 15:55:30.978] [cmiMock] [restartedMain] [] [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
-[2020-08-19 15:55:31.168] [cmiMock] [restartedMain] [] [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[2020-08-19 15:55:31.168] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2352 ms
-[2020-08-19 15:55:31.319] [cmiMock] [restartedMain] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-[2020-08-19 15:55:31.476] [cmiMock] [restartedMain] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-[2020-08-19 15:55:31.483] [cmiMock] [restartedMain] [] [INFO] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/cmi'
-[2020-08-19 15:55:31.667] [cmiMock] [restartedMain] [] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-[2020-08-19 15:55:31.732] [cmiMock] [task-1] [] [INFO] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[2020-08-19 15:55:31.812] [cmiMock] [restartedMain] [] [WARN] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[2020-08-19 15:55:31.820] [cmiMock] [task-1] [] [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.18.Final
-[2020-08-19 15:55:32.033] [cmiMock] [task-1] [] [INFO] o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-[2020-08-19 15:55:32.202] [cmiMock] [task-1] [] [INFO] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-[2020-08-19 15:55:33.055] [cmiMock] [task-1] [] [INFO] o.h.t.s.internal.SchemaCreatorImpl - HHH000476: Executing import script 'file:/C:/Users/user/eclipse-workspace/CMIMock/target/classes/import.sql'
-[2020-08-19 15:55:33.089] [cmiMock] [task-1] [] [INFO] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[2020-08-19 15:55:33.098] [cmiMock] [task-1] [] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[2020-08-19 15:55:33.121] [cmiMock] [task-2] [] [INFO] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[2020-08-19 15:55:33.192] [cmiMock] [restartedMain] [] [INFO] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
-[2020-08-19 15:55:33.225] [cmiMock] [restartedMain] [] [INFO] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9000"]
-[2020-08-19 15:55:33.249] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9000 (http) with context path ''
-[2020-08-19 15:55:33.251] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
-[2020-08-19 15:55:33.542] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
-[2020-08-19 15:55:33.558] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - Started CmiMockServiceApplication in 5.302 seconds (JVM running for 6.593)
-[2020-08-19 15:57:41.439] [cmiMock] [http-nio-9000-exec-1] [] [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-[2020-08-19 15:57:41.440] [cmiMock] [http-nio-9000-exec-1] [] [INFO] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-[2020-08-19 15:57:41.447] [cmiMock] [http-nio-9000-exec-1] [] [INFO] o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
-[2020-08-19 16:00:35.079] [cmiMock] [Thread-5] [] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[2020-08-19 16:00:35.081] [cmiMock] [Thread-5] [] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-[2020-08-19 16:00:35.084] [cmiMock] [Thread-5] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-[2020-08-19 16:00:35.096] [cmiMock] [Thread-5] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-[2020-08-19 16:00:35.303] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - Starting CmiMockServiceApplication on Bolt with PID 12320 (C:\Users\user\eclipse-workspace\CMIMock\target\classes started by EL KOTB ZAKARIA in C:\Users\user\eclipse-workspace\CMIMock)
-[2020-08-19 16:00:35.303] [cmiMock] [restartedMain] [] [DEBUG] e.r.p.CmiMockServiceApplication - Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
-[2020-08-19 16:00:35.304] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - No active profile set, falling back to default profiles: default
-[2020-08-19 16:00:35.713] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-[2020-08-19 16:00:35.744] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30ms. Found 1 JPA repository interfaces.
-[2020-08-19 16:00:35.865] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9000 (http)
-[2020-08-19 16:00:35.866] [cmiMock] [restartedMain] [] [INFO] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
-[2020-08-19 16:00:35.866] [cmiMock] [restartedMain] [] [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
-[2020-08-19 16:00:35.866] [cmiMock] [restartedMain] [] [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
-[2020-08-19 16:00:35.913] [cmiMock] [restartedMain] [] [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[2020-08-19 16:00:35.913] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 606 ms
-[2020-08-19 16:00:35.966] [cmiMock] [restartedMain] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
-[2020-08-19 16:00:36.055] [cmiMock] [restartedMain] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
-[2020-08-19 16:00:36.055] [cmiMock] [restartedMain] [] [INFO] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/cmi'
-[2020-08-19 16:00:36.101] [cmiMock] [restartedMain] [] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-[2020-08-19 16:00:36.118] [cmiMock] [task-1] [] [INFO] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[2020-08-19 16:00:36.130] [cmiMock] [task-1] [] [INFO] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-[2020-08-19 16:00:36.152] [cmiMock] [restartedMain] [] [WARN] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[2020-08-19 16:00:36.286] [cmiMock] [task-1] [] [INFO] o.h.t.s.internal.SchemaCreatorImpl - HHH000476: Executing import script 'file:/C:/Users/user/eclipse-workspace/CMIMock/target/classes/import.sql'
-[2020-08-19 16:00:36.325] [cmiMock] [task-1] [] [INFO] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[2020-08-19 16:00:36.326] [cmiMock] [task-1] [] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[2020-08-19 16:00:36.347] [cmiMock] [task-2] [] [INFO] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[2020-08-19 16:00:36.532] [cmiMock] [restartedMain] [] [INFO] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
-[2020-08-19 16:00:36.559] [cmiMock] [restartedMain] [] [INFO] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9000"]
-[2020-08-19 16:00:36.564] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9000 (http) with context path ''
-[2020-08-19 16:00:36.565] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
-[2020-08-19 16:00:36.621] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
-[2020-08-19 16:00:36.630] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - Started CmiMockServiceApplication in 1.424 seconds (JVM running for 309.664)
-[2020-08-19 16:00:36.634] [cmiMock] [restartedMain] [] [INFO] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[2020-08-19 16:00:39.776] [cmiMock] [http-nio-9000-exec-1] [] [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-[2020-08-19 16:00:39.776] [cmiMock] [http-nio-9000-exec-1] [] [INFO] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-[2020-08-19 16:00:39.780] [cmiMock] [http-nio-9000-exec-1] [] [INFO] o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
-[2020-08-19 16:02:58.749] [cmiMock] [Thread-9] [] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[2020-08-19 16:02:58.750] [cmiMock] [Thread-9] [] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-[2020-08-19 16:02:58.751] [cmiMock] [Thread-9] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
-[2020-08-19 16:02:58.757] [cmiMock] [Thread-9] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
-[2020-08-19 16:02:58.933] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - Starting CmiMockServiceApplication on Bolt with PID 12320 (C:\Users\user\eclipse-workspace\CMIMock\target\classes started by EL KOTB ZAKARIA in C:\Users\user\eclipse-workspace\CMIMock)
-[2020-08-19 16:02:58.933] [cmiMock] [restartedMain] [] [DEBUG] e.r.p.CmiMockServiceApplication - Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
-[2020-08-19 16:02:58.933] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - No active profile set, falling back to default profiles: default
-[2020-08-19 16:02:59.330] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-[2020-08-19 16:02:59.365] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33ms. Found 1 JPA repository interfaces.
-[2020-08-19 16:02:59.496] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9000 (http)
-[2020-08-19 16:02:59.497] [cmiMock] [restartedMain] [] [INFO] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
-[2020-08-19 16:02:59.497] [cmiMock] [restartedMain] [] [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
-[2020-08-19 16:02:59.497] [cmiMock] [restartedMain] [] [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
-[2020-08-19 16:02:59.546] [cmiMock] [restartedMain] [] [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[2020-08-19 16:02:59.546] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 609 ms
-[2020-08-19 16:02:59.588] [cmiMock] [restartedMain] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
-[2020-08-19 16:02:59.672] [cmiMock] [restartedMain] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
-[2020-08-19 16:02:59.673] [cmiMock] [restartedMain] [] [INFO] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/cmi'
-[2020-08-19 16:02:59.760] [cmiMock] [restartedMain] [] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-[2020-08-19 16:02:59.819] [cmiMock] [task-1] [] [INFO] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[2020-08-19 16:02:59.834] [cmiMock] [task-1] [] [INFO] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-[2020-08-19 16:02:59.849] [cmiMock] [restartedMain] [] [WARN] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[2020-08-19 16:03:00.207] [cmiMock] [task-1] [] [INFO] o.h.t.s.internal.SchemaCreatorImpl - HHH000476: Executing import script 'file:/C:/Users/user/eclipse-workspace/CMIMock/target/classes/import.sql'
-[2020-08-19 16:03:00.244] [cmiMock] [task-1] [] [INFO] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[2020-08-19 16:03:00.244] [cmiMock] [task-1] [] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[2020-08-19 16:03:00.304] [cmiMock] [task-2] [] [INFO] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[2020-08-19 16:03:00.518] [cmiMock] [restartedMain] [] [INFO] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
-[2020-08-19 16:03:00.565] [cmiMock] [restartedMain] [] [INFO] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9000"]
-[2020-08-19 16:03:00.569] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9000 (http) with context path ''
-[2020-08-19 16:03:00.571] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
-[2020-08-19 16:03:00.695] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
-[2020-08-19 16:03:00.712] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - Started CmiMockServiceApplication in 1.865 seconds (JVM running for 453.746)
-[2020-08-19 16:03:00.718] [cmiMock] [restartedMain] [] [INFO] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[2020-08-19 16:03:10.248] [cmiMock] [Thread-15] [] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[2020-08-19 16:03:10.250] [cmiMock] [Thread-15] [] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-[2020-08-19 16:03:10.250] [cmiMock] [Thread-15] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
-[2020-08-19 16:03:10.256] [cmiMock] [Thread-15] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
-[2020-08-19 16:03:10.434] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - Starting CmiMockServiceApplication on Bolt with PID 12320 (C:\Users\user\eclipse-workspace\CMIMock\target\classes started by EL KOTB ZAKARIA in C:\Users\user\eclipse-workspace\CMIMock)
-[2020-08-19 16:03:10.434] [cmiMock] [restartedMain] [] [DEBUG] e.r.p.CmiMockServiceApplication - Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
-[2020-08-19 16:03:10.435] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - No active profile set, falling back to default profiles: default
-[2020-08-19 16:03:10.983] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-[2020-08-19 16:03:11.047] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 63ms. Found 1 JPA repository interfaces.
-[2020-08-19 16:03:11.221] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9000 (http)
-[2020-08-19 16:03:11.222] [cmiMock] [restartedMain] [] [INFO] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
-[2020-08-19 16:03:11.223] [cmiMock] [restartedMain] [] [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
-[2020-08-19 16:03:11.223] [cmiMock] [restartedMain] [] [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
-[2020-08-19 16:03:11.291] [cmiMock] [restartedMain] [] [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[2020-08-19 16:03:11.291] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 852 ms
-[2020-08-19 16:03:11.373] [cmiMock] [restartedMain] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
-[2020-08-19 16:03:11.527] [cmiMock] [restartedMain] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
-[2020-08-19 16:03:11.528] [cmiMock] [restartedMain] [] [INFO] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/cmi'
-[2020-08-19 16:03:11.634] [cmiMock] [restartedMain] [] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-[2020-08-19 16:03:11.758] [cmiMock] [task-1] [] [INFO] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[2020-08-19 16:03:11.779] [cmiMock] [task-1] [] [INFO] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-[2020-08-19 16:03:11.794] [cmiMock] [restartedMain] [] [WARN] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[2020-08-19 16:03:11.955] [cmiMock] [task-1] [] [INFO] o.h.t.s.internal.SchemaCreatorImpl - HHH000476: Executing import script 'file:/C:/Users/user/eclipse-workspace/CMIMock/target/classes/import.sql'
-[2020-08-19 16:03:11.991] [cmiMock] [task-1] [] [INFO] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[2020-08-19 16:03:11.991] [cmiMock] [task-1] [] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[2020-08-19 16:03:12.037] [cmiMock] [task-2] [] [INFO] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[2020-08-19 16:03:12.272] [cmiMock] [restartedMain] [] [INFO] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
-[2020-08-19 16:03:12.320] [cmiMock] [restartedMain] [] [INFO] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9000"]
-[2020-08-19 16:03:12.325] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9000 (http) with context path ''
-[2020-08-19 16:03:12.326] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
-[2020-08-19 16:03:12.446] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
-[2020-08-19 16:03:12.459] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - Started CmiMockServiceApplication in 2.117 seconds (JVM running for 465.494)
-[2020-08-19 16:03:12.463] [cmiMock] [restartedMain] [] [INFO] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[2020-08-19 16:03:22.866] [cmiMock] [Thread-21] [] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[2020-08-19 16:03:22.867] [cmiMock] [Thread-21] [] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-[2020-08-19 16:03:22.867] [cmiMock] [Thread-21] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
-[2020-08-19 16:03:22.874] [cmiMock] [Thread-21] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
-[2020-08-19 16:03:23.018] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - Starting CmiMockServiceApplication on Bolt with PID 12320 (C:\Users\user\eclipse-workspace\CMIMock\target\classes started by EL KOTB ZAKARIA in C:\Users\user\eclipse-workspace\CMIMock)
-[2020-08-19 16:03:23.018] [cmiMock] [restartedMain] [] [DEBUG] e.r.p.CmiMockServiceApplication - Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
-[2020-08-19 16:03:23.018] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - No active profile set, falling back to default profiles: default
-[2020-08-19 16:03:23.359] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-[2020-08-19 16:03:23.391] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31ms. Found 1 JPA repository interfaces.
-[2020-08-19 16:03:23.497] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9000 (http)
-[2020-08-19 16:03:23.497] [cmiMock] [restartedMain] [] [INFO] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
-[2020-08-19 16:03:23.498] [cmiMock] [restartedMain] [] [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
-[2020-08-19 16:03:23.499] [cmiMock] [restartedMain] [] [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
-[2020-08-19 16:03:23.539] [cmiMock] [restartedMain] [] [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[2020-08-19 16:03:23.540] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 519 ms
-[2020-08-19 16:03:23.575] [cmiMock] [restartedMain] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
-[2020-08-19 16:03:23.708] [cmiMock] [restartedMain] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
-[2020-08-19 16:03:23.708] [cmiMock] [restartedMain] [] [INFO] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/cmi'
-[2020-08-19 16:03:23.771] [cmiMock] [restartedMain] [] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-[2020-08-19 16:03:23.793] [cmiMock] [task-1] [] [INFO] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[2020-08-19 16:03:23.809] [cmiMock] [task-1] [] [INFO] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-[2020-08-19 16:03:23.845] [cmiMock] [restartedMain] [] [WARN] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[2020-08-19 16:03:23.954] [cmiMock] [task-1] [] [INFO] o.h.t.s.internal.SchemaCreatorImpl - HHH000476: Executing import script 'file:/C:/Users/user/eclipse-workspace/CMIMock/target/classes/import.sql'
-[2020-08-19 16:03:23.984] [cmiMock] [task-1] [] [INFO] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[2020-08-19 16:03:23.985] [cmiMock] [task-1] [] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[2020-08-19 16:03:23.996] [cmiMock] [task-2] [] [INFO] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[2020-08-19 16:03:24.159] [cmiMock] [restartedMain] [] [INFO] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
-[2020-08-19 16:03:24.184] [cmiMock] [restartedMain] [] [INFO] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9000"]
-[2020-08-19 16:03:24.188] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9000 (http) with context path ''
-[2020-08-19 16:03:24.189] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
-[2020-08-19 16:03:24.247] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
-[2020-08-19 16:03:24.260] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - Started CmiMockServiceApplication in 1.303 seconds (JVM running for 477.294)
-[2020-08-19 16:03:24.262] [cmiMock] [restartedMain] [] [INFO] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[2020-08-19 16:03:35.603] [cmiMock] [http-nio-9000-exec-1] [] [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-[2020-08-19 16:03:35.603] [cmiMock] [http-nio-9000-exec-1] [] [INFO] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-[2020-08-19 16:03:35.606] [cmiMock] [http-nio-9000-exec-1] [] [INFO] o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
-[2020-08-19 16:05:43.254] [cmiMock] [Thread-27] [] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[2020-08-19 16:05:43.256] [cmiMock] [Thread-27] [] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-[2020-08-19 16:05:43.256] [cmiMock] [Thread-27] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
-[2020-08-19 16:05:43.264] [cmiMock] [Thread-27] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
-[2020-08-19 16:05:43.482] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - Starting CmiMockServiceApplication on Bolt with PID 12320 (C:\Users\user\eclipse-workspace\CMIMock\target\classes started by EL KOTB ZAKARIA in C:\Users\user\eclipse-workspace\CMIMock)
-[2020-08-19 16:05:43.482] [cmiMock] [restartedMain] [] [DEBUG] e.r.p.CmiMockServiceApplication - Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
-[2020-08-19 16:05:43.482] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - No active profile set, falling back to default profiles: default
-[2020-08-19 16:05:44.071] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-[2020-08-19 16:05:44.108] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36ms. Found 1 JPA repository interfaces.
-[2020-08-19 16:05:44.235] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9000 (http)
-[2020-08-19 16:05:44.236] [cmiMock] [restartedMain] [] [INFO] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
-[2020-08-19 16:05:44.236] [cmiMock] [restartedMain] [] [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
-[2020-08-19 16:05:44.237] [cmiMock] [restartedMain] [] [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
-[2020-08-19 16:05:44.283] [cmiMock] [restartedMain] [] [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[2020-08-19 16:05:44.284] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 794 ms
-[2020-08-19 16:05:44.328] [cmiMock] [restartedMain] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
-[2020-08-19 16:05:44.414] [cmiMock] [restartedMain] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
-[2020-08-19 16:05:44.414] [cmiMock] [restartedMain] [] [INFO] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/cmi'
-[2020-08-19 16:05:44.467] [cmiMock] [restartedMain] [] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-[2020-08-19 16:05:44.488] [cmiMock] [task-1] [] [INFO] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[2020-08-19 16:05:44.499] [cmiMock] [task-1] [] [INFO] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-[2020-08-19 16:05:44.522] [cmiMock] [restartedMain] [] [WARN] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[2020-08-19 16:05:44.638] [cmiMock] [task-1] [] [INFO] o.h.t.s.internal.SchemaCreatorImpl - HHH000476: Executing import script 'file:/C:/Users/user/eclipse-workspace/CMIMock/target/classes/import.sql'
-[2020-08-19 16:05:44.666] [cmiMock] [task-1] [] [INFO] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[2020-08-19 16:05:44.667] [cmiMock] [task-1] [] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[2020-08-19 16:05:44.680] [cmiMock] [task-2] [] [INFO] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[2020-08-19 16:05:44.830] [cmiMock] [restartedMain] [] [INFO] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
-[2020-08-19 16:05:44.855] [cmiMock] [restartedMain] [] [INFO] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9000"]
-[2020-08-19 16:05:44.860] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9000 (http) with context path ''
-[2020-08-19 16:05:44.860] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
-[2020-08-19 16:05:44.926] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
-[2020-08-19 16:05:44.940] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - Started CmiMockServiceApplication in 1.562 seconds (JVM running for 617.975)
-[2020-08-19 16:05:44.944] [cmiMock] [restartedMain] [] [INFO] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-[2020-08-19 16:05:46.538] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
-[2020-08-19 16:05:47.090] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[2020-08-19 16:05:47.091] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-[2020-08-19 16:05:47.092] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
-[2020-08-19 16:05:47.098] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
-[2020-08-19 16:53:44.177] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - Starting CmiMockServiceApplication on Bolt with PID 10940 (C:\Users\user\eclipse-workspace\CMIMock\target\classes started by EL KOTB ZAKARIA in C:\Users\user\eclipse-workspace\CMIMock)
-[2020-08-19 16:53:44.180] [cmiMock] [restartedMain] [] [DEBUG] e.r.p.CmiMockServiceApplication - Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
-[2020-08-19 16:53:44.180] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - No active profile set, falling back to default profiles: default
-[2020-08-19 16:53:44.229] [cmiMock] [restartedMain] [] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[2020-08-19 16:53:44.229] [cmiMock] [restartedMain] [] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[2020-08-19 16:53:45.286] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-[2020-08-19 16:53:45.371] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 75ms. Found 1 JPA repository interfaces.
-[2020-08-19 16:53:45.979] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9000 (http)
-[2020-08-19 16:53:45.988] [cmiMock] [restartedMain] [] [INFO] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
-[2020-08-19 16:53:45.988] [cmiMock] [restartedMain] [] [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
-[2020-08-19 16:53:45.990] [cmiMock] [restartedMain] [] [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
-[2020-08-19 16:53:46.104] [cmiMock] [restartedMain] [] [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[2020-08-19 16:53:46.105] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1876 ms
-[2020-08-19 16:53:46.232] [cmiMock] [restartedMain] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-[2020-08-19 16:53:46.381] [cmiMock] [restartedMain] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-[2020-08-19 16:53:46.389] [cmiMock] [restartedMain] [] [INFO] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/cmi'
-[2020-08-19 16:53:46.603] [cmiMock] [restartedMain] [] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-[2020-08-19 16:53:46.674] [cmiMock] [task-1] [] [INFO] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[2020-08-19 16:53:46.752] [cmiMock] [task-1] [] [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.18.Final
-[2020-08-19 16:53:46.758] [cmiMock] [restartedMain] [] [WARN] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[2020-08-19 16:53:46.952] [cmiMock] [task-1] [] [INFO] o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-[2020-08-19 16:53:47.141] [cmiMock] [task-1] [] [INFO] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-[2020-08-19 16:53:48.246] [cmiMock] [task-1] [] [INFO] o.h.t.s.internal.SchemaCreatorImpl - HHH000476: Executing import script 'file:/C:/Users/user/eclipse-workspace/CMIMock/target/classes/import.sql'
-[2020-08-19 16:53:48.283] [cmiMock] [task-1] [] [INFO] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[2020-08-19 16:53:48.291] [cmiMock] [task-1] [] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[2020-08-19 16:53:48.313] [cmiMock] [task-2] [] [WARN] o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
-[2020-08-19 16:53:48.382] [cmiMock] [restartedMain] [] [INFO] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
-[2020-08-19 16:53:48.415] [cmiMock] [restartedMain] [] [INFO] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9000"]
-[2020-08-19 16:53:48.440] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9000 (http) with context path ''
-[2020-08-19 16:53:48.442] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
-[2020-08-19 16:53:48.733] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
-[2020-08-19 16:53:48.748] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - Started CmiMockServiceApplication in 5.061 seconds (JVM running for 7.093)
-[2020-08-19 16:54:30.032] [cmiMock] [http-nio-9000-exec-1] [] [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-[2020-08-19 16:54:30.033] [cmiMock] [http-nio-9000-exec-1] [] [INFO] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-[2020-08-19 16:54:30.047] [cmiMock] [http-nio-9000-exec-1] [] [INFO] o.s.web.servlet.DispatcherServlet - Completed initialization in 14 ms
-[2020-08-19 16:59:18.653] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
-[2020-08-19 16:59:19.059] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[2020-08-19 16:59:19.061] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-[2020-08-19 16:59:19.063] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-[2020-08-19 16:59:19.072] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2020-08-25 09:29:32.470] [cmiMock] [http-nio-9000-exec-1] [] [WARN] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [effyis.rdv.payment.util.exception.DebtsException: CANAL INEXISTANT]
+[2020-08-25 09:30:10.775] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[2020-08-25 09:30:11.158] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2020-08-25 09:30:11.159] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[2020-08-25 09:30:11.160] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+[2020-08-25 09:30:11.172] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+[2020-08-25 09:30:20.319] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - Starting CmiMockServiceApplication on Bolt with PID 15120 (C:\Users\user\eclipse-workspace\CMIMock\target\classes started by EL KOTB ZAKARIA in C:\Users\user\eclipse-workspace\CMIMock)
+[2020-08-25 09:30:20.322] [cmiMock] [restartedMain] [] [DEBUG] e.r.p.CmiMockServiceApplication - Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+[2020-08-25 09:30:20.323] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - No active profile set, falling back to default profiles: default
+[2020-08-25 09:30:20.397] [cmiMock] [restartedMain] [] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2020-08-25 09:30:20.397] [cmiMock] [restartedMain] [] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2020-08-25 09:30:21.699] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+[2020-08-25 09:30:21.848] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 135ms. Found 2 JPA repository interfaces.
+[2020-08-25 09:30:22.740] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9000 (http)
+[2020-08-25 09:30:22.749] [cmiMock] [restartedMain] [] [INFO] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
+[2020-08-25 09:30:22.750] [cmiMock] [restartedMain] [] [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2020-08-25 09:30:22.750] [cmiMock] [restartedMain] [] [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+[2020-08-25 09:30:22.864] [cmiMock] [restartedMain] [] [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2020-08-25 09:30:22.864] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2467 ms
+[2020-08-25 09:30:23.002] [cmiMock] [restartedMain] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2020-08-25 09:30:23.168] [cmiMock] [restartedMain] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2020-08-25 09:30:23.177] [cmiMock] [restartedMain] [] [INFO] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/cmi'
+[2020-08-25 09:30:23.397] [cmiMock] [restartedMain] [] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[2020-08-25 09:30:23.473] [cmiMock] [task-1] [] [INFO] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2020-08-25 09:30:23.556] [cmiMock] [task-1] [] [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.18.Final
+[2020-08-25 09:30:23.560] [cmiMock] [restartedMain] [] [WARN] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2020-08-25 09:30:23.741] [cmiMock] [task-1] [] [INFO] o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2020-08-25 09:30:23.927] [cmiMock] [task-1] [] [INFO] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[2020-08-25 09:30:24.830] [cmiMock] [task-1] [] [INFO] o.h.t.s.internal.SchemaCreatorImpl - HHH000476: Executing import script 'file:/C:/Users/user/eclipse-workspace/CMIMock/target/classes/import.sql'
+[2020-08-25 09:30:24.868] [cmiMock] [task-1] [] [INFO] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2020-08-25 09:30:24.876] [cmiMock] [task-1] [] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2020-08-25 09:30:24.898] [cmiMock] [task-2] [] [INFO] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[2020-08-25 09:30:24.976] [cmiMock] [restartedMain] [] [INFO] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+[2020-08-25 09:30:25.007] [cmiMock] [restartedMain] [] [INFO] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9000"]
+[2020-08-25 09:30:25.032] [cmiMock] [restartedMain] [] [INFO] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9000 (http) with context path ''
+[2020-08-25 09:30:25.033] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+[2020-08-25 09:30:25.332] [cmiMock] [restartedMain] [] [INFO] o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+[2020-08-25 09:30:25.351] [cmiMock] [restartedMain] [] [INFO] e.r.p.CmiMockServiceApplication - Started CmiMockServiceApplication in 5.759 seconds (JVM running for 7.885)
+[2020-08-25 09:31:32.418] [cmiMock] [http-nio-9000-exec-2] [] [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2020-08-25 09:31:32.419] [cmiMock] [http-nio-9000-exec-2] [] [INFO] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2020-08-25 09:31:32.430] [cmiMock] [http-nio-9000-exec-2] [] [INFO] o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+[2020-08-25 09:31:38.434] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[2020-08-25 09:31:38.891] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2020-08-25 09:31:38.893] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[2020-08-25 09:31:38.895] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2020-08-25 09:31:38.903] [cmiMock] [RMI TCP Connection(2)-127.0.0.1] [] [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
