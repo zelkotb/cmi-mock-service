@@ -39,14 +39,14 @@ public class GlobalExceptionHandler {
 	@ExceptionHandler(BillersException.class)
 	@ResponseStatus(code = HttpStatus.OK)
 	public BillersResponseDTO handleBillersException(BillersException e) throws NoSuchAlgorithmException {
-		GlobalExceptionHandler.LOGGER.error(e.getMessage(), e);
+		GlobalExceptionHandler.LOGGER.error(e.getMessage());
 		return buildBillerResponse(e);
 	}
 
 	@ExceptionHandler(DebtsException.class)
 	@ResponseStatus(code = HttpStatus.OK)
 	public DebtsResponseDTO handleDebtsException(DebtsException e) throws NoSuchAlgorithmException {
-		GlobalExceptionHandler.LOGGER.error(e.getMessage(), e);
+		GlobalExceptionHandler.LOGGER.error(e.getMessage());
 		return buildDebtsResponse(e);
 	}
 

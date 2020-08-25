@@ -23,11 +23,12 @@ public class Debt {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@JsonIgnore
 	private Long id;
-	@JsonProperty("nomCreance")
+	@JsonProperty("codeCreance")
 	@Column(name = "debt_code")
 	private String debtCode;
-	@JsonProperty("codeCreance")
+	@JsonProperty("nomCreance")
 	@Column(name = "debt_name")
 	private String debtName;
 	@ManyToOne()
