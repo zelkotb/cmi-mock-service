@@ -42,6 +42,6 @@ public class DebtController {
 			@RequestParam(required = false) String refTxSysPmt, @RequestParam String MAC) throws Exception {
 		String realMAC = URLDecoder.decode(MAC, StandardCharsets.UTF_8);
 		return this.debtService.getFormFields(typeCanal, aquereurID, modeID, canalID, creancierID, creanceID,
-				dateServeur, refTxSysPmt, realMAC);
+				dateServeur, refTxSysPmt, realMAC.replace(" ", "+"));
 	}
 }

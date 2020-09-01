@@ -102,8 +102,8 @@ public class GlobalExceptionHandler {
 		responseDTO.setNbreParams(0);
 		responseDTO.setCreancierParams(formFields);
 		responseDTO.setRefTxFatourati("");
-		// responseDTO.setMAC(SecurityUtil.calculateDebtsSendMAC(e.getReturnCode(),
-		// dateServeur, debts, this.secret));
+		responseDTO.setMAC(
+				SecurityUtil.calculateFormFieldsSendMAC(e.getReturnCode(), dateServeur, formFields, this.secret));
 		return responseDTO;
 	}
 

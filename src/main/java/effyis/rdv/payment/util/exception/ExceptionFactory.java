@@ -16,7 +16,7 @@ public class ExceptionFactory {
 		case Constants.FACTORY_DEBTS:
 			return new DebtsException(returnCode, message);
 		case Constants.FACTORY_FORMFIELDS:
-			return new BillersException(returnCode, message);
+			return new FormFieldException(returnCode, message);
 		default:
 			throw new Exception();
 		}
