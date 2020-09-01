@@ -20,11 +20,17 @@ public class CmiMockServiceApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		String hash = SecurityUtil.calculateHashMAC("SGMA", "16", "08242020171712", "5", "", "", "4", "secret");
+		String hash = SecurityUtil.calculateHashMAC_Billers_Debts("SGMA", "16", "08242020171712", "5", "", "", "4",
+				"secret");
 		System.err.println("hash billers : " + hash);
 
-		String hash2 = SecurityUtil.calculateHashMAC("SGMA", "16", "08242020171712", "5", "0006", "", "4", "secret");
+		String hash2 = SecurityUtil.calculateHashMAC_Billers_Debts("SGMA", "16", "08242020171712", "5", "0006", "", "4",
+				"secret");
 		System.err.println("hash debts : " + hash2);
+
+		String hash3 = SecurityUtil.calculateHashMAC_FormFields("SGMA", "16", "01", "0006", "08242020171712", "5", "",
+				"3", "secret");
+		System.err.println("hash form : " + hash3);
 	}
 
 }

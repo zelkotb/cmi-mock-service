@@ -1,5 +1,7 @@
 package effyis.rdv.payment.util.exception;
 
+import effyis.rdv.payment.util.Constants;
+
 /**
  *
  * @author EL KOTB ZAKARIA
@@ -7,13 +9,16 @@ package effyis.rdv.payment.util.exception;
  */
 public class ExceptionFactory {
 
-	public Exception getException(String type, String returnCode, String message) {
-		if (type.equals("billers")) {
+	public Exception getException(String type, String returnCode, String message) throws Exception {
+		switch (type) {
+		case Constants.FACTORY_BILLERS:
 			return new BillersException(returnCode, message);
-		} else if (type.equals("debts")) {
+		case Constants.FACTORY_DEBTS:
 			return new DebtsException(returnCode, message);
-		} else {
-			return null;
+		case Constants.FACTORY_FORMFIELDS:
+			return new BillersException(returnCode, message);
+		default:
+			throw new Exception();
 		}
 	}
 

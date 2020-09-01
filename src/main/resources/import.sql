@@ -9,12 +9,25 @@ insert into biller (biller_name, biller_code, biller_description, logo_path, web
 insert into biller (biller_name, biller_code, biller_description, logo_path, website, category) values ('AMENDIS', '0010', 'AMENDIS SERVICE', 'http://localhost:8080/amendis-logo.jpg','https://amendis.com','1');
 insert into biller (biller_name, biller_code, biller_description, logo_path, website, category) values ('ONEE', '0004', 'ONEE SERVICE', 'http://localhost:8080/onee-logo.png','https://onee.com','1');
 
-insert into debt (debt_code, debt_name, biller_id) values ('01','Vignette',7);
-insert into debt (debt_code, debt_name, biller_id) values ('02','Impots sur revenu',7);
-insert into debt (debt_code, debt_name, biller_id) values ('03','Impots immobilier',7);
-insert into debt (debt_code, debt_name, biller_id) values ('01','facture mobile',3);
-insert into debt (debt_code, debt_name, biller_id) values ('02','facture fix',3);
-insert into debt (debt_code, debt_name, biller_id) values ('03','facture Internet',3)
+insert into debt (debt_code, debt_name, active, biller_id) values ('01','Vignette',true,7);
+insert into debt (debt_code, debt_name, active, biller_id) values ('02','Impots sur revenu',true,7);
+insert into debt (debt_code, debt_name, active, biller_id) values ('03','Impots immobilier',true,7);
+insert into debt (debt_code, debt_name, active, biller_id) values ('01','facture mobile',true,3);
+insert into debt (debt_code, debt_name, active, biller_id) values ('02','facture fix',false,3);
+insert into debt (debt_code, debt_name, active, biller_id) values ('03','facture Internet',true,3);
+
+insert into form_field (field_name, field_type, field_format, min_size, max_size, contrainte) values ('contrat','text','chaine',5,5,1);
+insert into form_field (field_name, field_type, list_vals, field_format, min_size, max_size, contrainte) values ('reference','select','AAA;BBB;CCC;DDD','chaine',1,10,1);
+insert into form_field (field_name, field_type, list_vals, field_format, min_size, max_size, contrainte) values ('type','checkbox','CH1;CH2;CH3;CH4','chaine',1,4,0);
+
+insert into debt_canal (debt, canal) values (4,'1');
+insert into debt_canal (debt, canal) values (4,'2');
+insert into debt_canal (debt, canal) values (4,'3');
+
+insert into debt_canal (debt, canal) values (5,'1');
+insert into debt_canal (debt, canal) values (5,'2');
+insert into debt_canal (debt, canal) values (5,'3');
+insert into debt_canal (debt, canal) values (5,'4');
 
 insert into biller_canal (biller, canal) values (1,'1');
 insert into biller_canal (biller, canal) values (1,'2');
@@ -54,3 +67,7 @@ insert into biller_canal (biller, canal) values (10,'1');
 insert into biller_canal (biller, canal) values (10,'2');
 insert into biller_canal (biller, canal) values (10,'3');
 insert into biller_canal (biller, canal) values (10,'4');
+
+insert into debt_form_fields (debt_id, form_fields_id) values (4,1);
+insert into debt_form_fields (debt_id, form_fields_id) values (4,2);
+insert into debt_form_fields (debt_id, form_fields_id) values (4,3);

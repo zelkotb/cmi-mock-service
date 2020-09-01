@@ -17,6 +17,7 @@ import effyis.rdv.payment.enumeration.Category;
 import effyis.rdv.payment.enumeration.ReturnCode;
 import effyis.rdv.payment.repository.BillerRepository;
 import effyis.rdv.payment.service.BillerService;
+import effyis.rdv.payment.util.Constants;
 import effyis.rdv.payment.util.DateUtil;
 import effyis.rdv.payment.util.SecurityUtil;
 import effyis.rdv.payment.util.exception.BillersException;
@@ -42,9 +43,9 @@ public class BillerServiceImpl implements BillerService {
 	public BillersResponseDTO getBillers(String typeCanal, String aquereurID, String modeID, String canalID,
 			String dateServeur, String categorieCreance, String refTxSysPmt, String MAC) throws Exception {
 
-		String calculatedMAC = SecurityUtil.calculateHashMAC(aquereurID, canalID, dateServeur, modeID, "", refTxSysPmt,
+		String calculatedMAC = SecurityUtil.calculateHashMAC_Billers_Debts(aquereurID, canalID, dateServeur, modeID, "", refTxSysPmt,
 				typeCanal, this.secret);
-		SecurityUtil.isMACValid(MAC, calculatedMAC, "billers");
+		SecurityUtil.isMACValid(MAC, calculatedMAC, Constants.FACTORY_BILLERS);
 		List<Biller> billers;
 		Category category;
 		Canal canal = getCanal(typeCanal);

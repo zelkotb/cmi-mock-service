@@ -16,7 +16,9 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 import effyis.rdv.payment.dto.BillerDTO;
 import effyis.rdv.payment.dto.BillersResponseDTO;
 import effyis.rdv.payment.dto.DebtsResponseDTO;
+import effyis.rdv.payment.dto.FormFieldsResponseDTO;
 import effyis.rdv.payment.entity.Debt;
+import effyis.rdv.payment.entity.FormField;
 import effyis.rdv.payment.util.DateUtil;
 import effyis.rdv.payment.util.SecurityUtil;
 
@@ -40,14 +42,21 @@ public class GlobalExceptionHandler {
 	@ResponseStatus(code = HttpStatus.OK)
 	public BillersResponseDTO handleBillersException(BillersException e) throws NoSuchAlgorithmException {
 		GlobalExceptionHandler.LOGGER.error(e.getMessage());
-		return buildBillerResponse(e);
+		return this.buildBillerResponse(e);
 	}
 
 	@ExceptionHandler(DebtsException.class)
 	@ResponseStatus(code = HttpStatus.OK)
 	public DebtsResponseDTO handleDebtsException(DebtsException e) throws NoSuchAlgorithmException {
 		GlobalExceptionHandler.LOGGER.error(e.getMessage());
-		return buildDebtsResponse(e);
+		return this.buildDebtsResponse(e);
+	}
+
+	@ExceptionHandler(FormFieldException.class)
+	@ResponseStatus(code = HttpStatus.OK)
+	public FormFieldsResponseDTO handleFormFieldException(FormFieldException e) throws NoSuchAlgorithmException {
+		GlobalExceptionHandler.LOGGER.error(e.getMessage());
+		return this.buildFormFieldResponse(e);
 	}
 
 	@ExceptionHandler(Exception.class)
@@ -80,6 +89,21 @@ public class GlobalExceptionHandler {
 		responseDTO.setNbreCreance(0);
 		responseDTO.setListeCreance(debts);
 		responseDTO.setMAC(SecurityUtil.calculateDebtsSendMAC(e.getReturnCode(), dateServeur, debts, this.secret));
+		return responseDTO;
+	}
+
+	private FormFieldsResponseDTO buildFormFieldResponse(FormFieldException e) throws NoSuchAlgorithmException {
+		FormFieldsResponseDTO responseDTO = new FormFieldsResponseDTO();
+		String dateServeur = DateUtil.formatDate(this.dateFormat, new Date());
+		List<FormField> formFields = new ArrayList<>();
+		responseDTO.setDateServeur(dateServeur);
+		responseDTO.setCodeRetour(e.getReturnCode());
+		responseDTO.setMsg(e.getMessage());
+		responseDTO.setNbreParams(0);
+		responseDTO.setCreancierParams(formFields);
+		responseDTO.setRefTxFatourati("");
+		// responseDTO.setMAC(SecurityUtil.calculateDebtsSendMAC(e.getReturnCode(),
+		// dateServeur, debts, this.secret));
 		return responseDTO;
 	}
 

@@ -8,6 +8,7 @@ import java.util.stream.Collectors;
 
 import effyis.rdv.payment.dto.BillerDTO;
 import effyis.rdv.payment.entity.Debt;
+import effyis.rdv.payment.entity.FormField;
 import effyis.rdv.payment.enumeration.ReturnCode;
 import effyis.rdv.payment.util.exception.ExceptionFactory;
 
@@ -26,15 +27,27 @@ public class SecurityUtil {
 		return md.digest();
 	}
 
-	public static String calculateHashMAC(String aquereurID, String canalID, String dateServeur, String modeID,
-			String creancierID, String refTxSysPmt, String typeCanal, String secret) throws NoSuchAlgorithmException {
+	public static String calculateHashMAC_Billers_Debts(String aquereurID, String canalID, String dateServeur,
+			String modeID, String creancierID, String refTxSysPmt, String typeCanal, String secret)
+			throws NoSuchAlgorithmException {
 
 		StringBuilder str = new StringBuilder(aquereurID);
 		refTxSysPmt = refTxSysPmt == null ? "" : refTxSysPmt;
 		str.append(canalID).append(dateServeur).append(modeID).append(creancierID).append(refTxSysPmt).append(typeCanal)
 				.append(secret);
-		String MAC = str.toString().replace(" ", "");
-		byte[] hashMAC = SecurityUtil.calculateHashInMD5(MAC);
+		byte[] hashMAC = SecurityUtil.calculateHashInMD5(str.toString());
+		return Base64.getEncoder().encodeToString(hashMAC);
+	}
+
+	public static String calculateHashMAC_FormFields(String aquereurID, String canalID, String creanceID,
+			String creancierID, String dateServeur, String modeID, String refTxSysPmt, String typeCanal, String secret)
+			throws NoSuchAlgorithmException {
+
+		StringBuilder str = new StringBuilder(aquereurID);
+		refTxSysPmt = refTxSysPmt == null ? "" : refTxSysPmt;
+		str.append(canalID).append(creancierID).append(creanceID).append(dateServeur).append(modeID).append(refTxSysPmt)
+				.append(typeCanal).append(secret);
+		byte[] hashMAC = SecurityUtil.calculateHashInMD5(str.toString());
 		return Base64.getEncoder().encodeToString(hashMAC);
 	}
 
@@ -65,12 +78,25 @@ public class SecurityUtil {
 		return Base64.getEncoder().encodeToString(hashMAC);
 	}
 
+	public static String calculateFormFieldsSendMAC(String codeRetour, String dateServeur, List<FormField> formFields,
+			String secret) throws NoSuchAlgorithmException {
+		StringBuilder str = new StringBuilder(codeRetour);
+		str.append(dateServeur);
+		List<String> concateCodeNameDebt = formFields.stream().map(FormField::getFieldName)
+				.collect(Collectors.toList());
+		concateCodeNameDebt.forEach(c -> str.append(c));
+		str.append(formFields.size());
+		str.append(secret);
+		byte[] hashMAC = SecurityUtil.calculateHashInMD5(str.toString());
+		return Base64.getEncoder().encodeToString(hashMAC);
+	}
+
 	public static boolean isMACValid(String MAC, String calculatedMAC, String exceptionType) throws Exception {
 		if (MAC.equals(calculatedMAC)) {
 			return true;
 		} else {
 			ExceptionFactory factory = new ExceptionFactory();
-			throw factory.getException("billers", ReturnCode.C100.getReturnCode(), ReturnCode.C100.getComment());
+			throw factory.getException(exceptionType, ReturnCode.C100.getReturnCode(), ReturnCode.C100.getComment());
 		}
 	}
 }
