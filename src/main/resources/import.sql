@@ -64,8 +64,10 @@ insert into debt_form_fields (debt_id, form_fields_id) values (13,20),(13,21),(1
 
 insert into biller (biller_name, biller_code, biller_description, logo_path, website, category) values ('RAM', '0009', 'Achat Ticket Avion', 'http://localhost:8080/ram-logo.png','https://ram.com','3');
 insert into debt (debt_code, debt_name, active, biller_id) values ('01','Billets Avion',true,9);
+insert into form_field (libelle, field_type, field_format, min_size, max_size, contrainte) values ('pour récuperer le référence veuillez contacter CRC Fatourati','libelle','chaine',4,15,1);
 insert into form_field (field_name, field_type, field_format, min_size, max_size, contrainte) values ('Référence Fatourati','text','chaine',4,15,1);
-insert into debt_form_fields (debt_id, form_fields_id) values (14,23);
+insert into form_field (field_name, field_type, list_vals, field_format, min_size, max_size, contrainte) values ('Type de Vole','checkbox','Aller-Retour VIP;Aller-Retour SIMPLE;Aller-VIP','chaine',4,15,1);
+insert into debt_form_fields (debt_id, form_fields_id) values (14,23),(14,24),(14,25);
 
 insert into debt_canal (debt, canal) values (1,'1'),(1,'2'),(1,'3'),(1,'4');
 insert into debt_canal (debt, canal) values (2,'1'),(2,'2'),(2,'3'),(2,'4');
