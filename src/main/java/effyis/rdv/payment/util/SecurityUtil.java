@@ -33,6 +33,7 @@ public class SecurityUtil {
 
 		StringBuilder str = new StringBuilder(aquereurID);
 		refTxSysPmt = refTxSysPmt == null ? "" : refTxSysPmt;
+		creancierID = creancierID == null ? "" : creancierID;
 		str.append(canalID).append(dateServeur).append(modeID).append(creancierID).append(refTxSysPmt).append(typeCanal)
 				.append(secret);
 		byte[] hashMAC = SecurityUtil.calculateHashInMD5(str.toString());
@@ -45,6 +46,8 @@ public class SecurityUtil {
 
 		StringBuilder str = new StringBuilder(aquereurID);
 		refTxSysPmt = refTxSysPmt == null ? "" : refTxSysPmt;
+		creancierID = creancierID == null ? "" : creancierID;
+		creanceID = creanceID == null ? "" : creanceID;
 		str.append(canalID).append(creancierID).append(creanceID).append(dateServeur).append(modeID).append(refTxSysPmt)
 				.append(typeCanal).append(secret);
 		byte[] hashMAC = SecurityUtil.calculateHashInMD5(str.toString());
