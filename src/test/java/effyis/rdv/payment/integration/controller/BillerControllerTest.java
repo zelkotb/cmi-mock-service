@@ -28,7 +28,7 @@ import effyis.rdv.payment.util.SecurityUtil;
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT, classes = CmiMockServiceApplication.class)
 public class BillerControllerTest {
 
-	@Autowired
+	/*@Autowired
 	MockMvc mockMvc;
 
 	@Value("${security.hash.secret}")
@@ -127,5 +127,5 @@ public class BillerControllerTest {
 		Assertions.assertEquals(ReturnCode.C113.getReturnCode(), response.getCodeRetour());
 		Assertions.assertEquals(ReturnCode.C113.getComment(), response.getMsg());
 		Assertions.assertEquals(0, response.getNbreCreancier());
-	}
+	}*/
 }
