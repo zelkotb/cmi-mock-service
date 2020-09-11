@@ -33,11 +33,13 @@
     <!-- Logger tout au niveau INFO -->
     <root level="INFO">
         <appender-ref ref="RollingFile" />
+        <appender-ref ref="Console" />
     </root>
  
     <!-- Logger "effyis.rdv*" au niveau DEBUG -->
     <logger name="effyis.rdv" level="DEBUG" additivity="false">
         <appender-ref ref="RollingFile" />
+        <appender-ref ref="Console" />
     </logger>
  
 </configuration>
