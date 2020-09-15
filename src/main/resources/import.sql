@@ -38,9 +38,9 @@ insert into form_field (field_name, field_type, field_format, min_size, max_size
 insert into form_field (field_name, field_type, field_format, min_size, max_size, contrainte) values ('CIN','text','chaine',4,15,1);
 insert into debt_form_fields (debt_id, form_fields_id) values (8,13),(8,14);
 
-insert into biller (biller_name, biller_code, biller_description, logo_path, website, category) values ('REDAL', '0006', 'Paiement de Facture', 'http://localhost:8080/redal_logo.jpg','https://redal.com','1');
+insert into biller (biller_name, biller_code, biller_description, logo_path, website, category) values ('REDAL', '0006', 'Paiement de Facture', 'https://imgshare.io/images/2020/09/15/redal_logo.jpg','https://redal.com','1');
 insert into debt (debt_code, debt_name, active, biller_id) values ('01','Facture REDAL',true,6);
-insert into form_field (field_name, field_type, field_format, min_size, max_size, contrainte) values ('CIL','text','chaine',4,15,1);
+insert into form_field (field_name, field_type, field_format, min_size, max_size, contrainte) values ('CIL','text','chaine',4,15,1); 
 insert into debt_form_fields (debt_id, form_fields_id) values (9,15);
 
 insert into biller (biller_name, biller_code, biller_description, logo_path, website, category) values ('ONEE', '0007', 'ONEE Branche éléctricité', 'http://localhost:8080/onee-logo.png','https://onee.com','1');
@@ -51,7 +51,7 @@ insert into debt (debt_code, debt_name, active, biller_id) values ('02','Paiemen
 insert into form_field (field_name, field_type, field_format, min_size, max_size, contrainte) values ('Numéro de Facture','text','chaine',4,15,1);
 insert into debt_form_fields (debt_id, form_fields_id) values (11,17);
 
-insert into biller (biller_name, biller_code, biller_description, logo_path, website, category) values ('DGI', '0008', 'Paiement Impots', 'http://localhost:8080/dgi-logo.jpg','https://dgi.com','4');
+insert into biller (biller_name, biller_code, biller_description, logo_path, website, category) values ('DGI', '0008', 'Paiement Impots', 'https://imgshare.io/images/2020/09/15/dgi-logo.jpg','https://dgi.com','4');
 insert into debt (debt_code, debt_name, active, biller_id) values ('01','Frais Immatriculation',true,8);
 insert into form_field (field_name, field_type, field_format, min_size, max_size, contrainte) values ('Référence de paiment','text','chaine',4,15,1);
 insert into form_field (field_name, field_type, field_format, min_size, max_size, contrainte) values ('Montant avant la virgule','text','entier',4,15,1);
@@ -62,9 +62,9 @@ insert into form_field (field_name, field_type, field_format, min_size, max_size
 insert into form_field (field_name, field_type, field_format, min_size, max_size, contrainte) values ('Montant','text','Reel',4,15,1);
 insert into debt_form_fields (debt_id, form_fields_id) values (13,20),(13,21),(13,22);
 
-insert into biller (biller_name, biller_code, biller_description, logo_path, website, category) values ('RAM', '0009', 'Achat Ticket Avion', 'http://localhost:8080/ram-logo.png','https://ram.com','3');
+insert into biller (biller_name, biller_code, biller_description, logo_path, website, category) values ('RAM', '0009', 'Achat Ticket Avion', 'https://imgshare.io/images/2020/09/15/ram-logo.png','https://ram.com','3');
 insert into debt (debt_code, debt_name, active, biller_id) values ('01','Billets Avion',true,9);
-insert into form_field (libelle, field_type, field_format, min_size, max_size, contrainte) values ('pour récuperer le référence veuillez contacter CRC Fatourati','libelle','chaine',4,15,1);
+insert into form_field (libelle, field_type, field_format, min_size, max_size, contrainte) values ('Pour récuperer le référence veuillez contacter CRC Fatourati','libelle','chaine',4,15,1);
 insert into form_field (field_name, field_type, field_format, min_size, max_size, contrainte) values ('Référence Fatourati','text','chaine',4,15,1);
 insert into form_field (field_name, field_type, list_vals, field_format, min_size, max_size, contrainte) values ('Type de Vole','checkbox','Aller-Retour VIP;Aller-Retour SIMPLE;Aller-VIP','chaine',4,15,1);
 insert into debt_form_fields (debt_id, form_fields_id) values (14,23),(14,24),(14,25);
