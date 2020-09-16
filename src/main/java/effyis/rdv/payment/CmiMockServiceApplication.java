@@ -20,17 +20,23 @@ public class CmiMockServiceApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		String hash = SecurityUtil.calculateHashMAC_Billers_Debts("SGMA", "16", "08242020171712", "5", "", "", "4",
+		byte[] hash = SecurityUtil.calculateHashMAC_Billers_Debts("SGMA", "16", "08242020171712", "5", "", "", "4",
 				"secret");
-		System.err.println("hash billers : " + hash);
+		for (byte b : hash) {
+			System.err.println("hash billers : " + b);
+		}
 
-		String hash2 = SecurityUtil.calculateHashMAC_Billers_Debts("SGMA", "16", "08242020171712", "5", "0006", "", "4",
+		byte[] hash2 = SecurityUtil.calculateHashMAC_Billers_Debts("SGMA", "16", "08242020171712", "5", "0006", "", "4",
 				"secret");
-		System.err.println("hash debts : " + hash2);
+		for (byte b : hash2) {
+			System.err.println("hash debts : " + b);
+		}
 
-		String hash3 = SecurityUtil.calculateHashMAC_FormFields("SGMA", "16", "01", "0006", "08242020171712", "5", "",
+		byte[] hash3 = SecurityUtil.calculateHashMAC_FormFields("SGMA", "16", "01", "0006", "08242020171712", "5", "",
 				"3", "secret");
-		System.err.println("hash form : " + hash3);
+		for (byte b : hash3) {
+			System.err.println("hash form : " + b);
+		}
 	}
 
 }

@@ -1,5 +1,7 @@
 package effyis.rdv.payment.dto;
 
+import java.util.Arrays;
+
 import javax.validation.constraints.NotBlank;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -18,8 +20,7 @@ public class RequestDTO {
 	private String dateServeur;
 	private String refTxSysPmt;
 	@JsonProperty("MAC")
-	@NotBlank(message = "MAC")
-	private String MAC;
+	private byte[] MAC;
 	private String creancierID;
 	private String creanceID;
 
@@ -71,11 +72,11 @@ public class RequestDTO {
 		this.refTxSysPmt = refTxSysPmt;
 	}
 
-	public String getMAC() {
+	public byte[] getMAC() {
 		return this.MAC;
 	}
 
-	public void setMAC(String mAC) {
+	public void setMAC(byte[] mAC) {
 		this.MAC = mAC;
 	}
 
@@ -98,6 +99,18 @@ public class RequestDTO {
 	public RequestDTO() {
 		super();
 		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public String toString() {
+		StringBuilder str = new StringBuilder("{ typeCanal: ");
+		str.append(this.typeCanal).append(", aquereurID: ").append(this.aquereurID).append(", modeID: ")
+				.append(this.modeID).append(", canalID: ").append(this.canalID).append(", dateServeur: ")
+				.append(this.dateServeur).append(", refTxSysPmt: ").append(this.refTxSysPmt).append(", MAC: ")
+				.append(Arrays.toString(this.MAC)).append(", creancierID: ").append(this.creancierID)
+				.append(", creanceID: ").append(this.creanceID).append(" }");
+
+		return str.toString();
 	}
 
 }

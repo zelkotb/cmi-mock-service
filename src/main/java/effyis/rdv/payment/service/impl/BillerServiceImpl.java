@@ -41,22 +41,22 @@ public class BillerServiceImpl implements BillerService {
 
 	@Override
 	public BillersResponseDTO getBillers(String typeCanal, String aquereurID, String modeID, String canalID,
-			String dateServeur, String categorieCreance, String refTxSysPmt, String MAC) throws Exception {
+			String dateServeur, String categorieCreance, String refTxSysPmt, byte[] MAC) throws Exception {
 
-		String calculatedMAC = SecurityUtil.calculateHashMAC_Billers_Debts(aquereurID, canalID, dateServeur, modeID, "", refTxSysPmt,
-				typeCanal, this.secret);
+		byte[] calculatedMAC = SecurityUtil.calculateHashMAC_Billers_Debts(aquereurID, canalID, dateServeur, modeID, "",
+				refTxSysPmt, typeCanal, this.secret);
 		SecurityUtil.isMACValid(MAC, calculatedMAC, Constants.FACTORY_BILLERS);
 		List<Biller> billers;
 		Category category;
-		Canal canal = getCanal(typeCanal);
+		Canal canal = this.getCanal(typeCanal);
 		// check if category exist
 		if ((categorieCreance != null) && (categorieCreance != "")) {
-			category = getCategory(categorieCreance);
+			category = this.getCategory(categorieCreance);
 			billers = this.billerRepository.findByCategoryAndCanals(category, canal);
 		} else {
 			billers = this.billerRepository.findAllByCanals(canal);
 		}
-		return buildResponse(billers);
+		return this.buildResponse(billers);
 	}
 
 	private BillersResponseDTO buildResponse(List<Biller> billers) throws NoSuchAlgorithmException {

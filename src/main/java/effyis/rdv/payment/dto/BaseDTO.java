@@ -10,7 +10,7 @@ public class BaseDTO {
 	private String dateServeur;
 	private String codeRetour;
 	private String msg;
-	private String MAC;
+	private byte[] MAC;
 
 	public String getDateServeur() {
 		return this.dateServeur;
@@ -36,11 +36,11 @@ public class BaseDTO {
 		this.msg = msg;
 	}
 
-	public String getMAC() {
+	public byte[] getMAC() {
 		return this.MAC;
 	}
 
-	public void setMAC(String mAC) {
+	public void setMAC(byte[] mAC) {
 		this.MAC = mAC;
 	}
 

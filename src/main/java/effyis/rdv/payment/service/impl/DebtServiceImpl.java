@@ -46,8 +46,8 @@ public class DebtServiceImpl implements DebtService {
 
 	@Override
 	public DebtsResponseDTO getDebts(String typeCanal, String aquereurID, String modeID, String canalID,
-			String creancierID, String dateServeur, String refTxSysPmt, String MAC) throws Exception {
-		String calculatedMAC = SecurityUtil.calculateHashMAC_Billers_Debts(aquereurID, canalID, dateServeur, modeID,
+			String creancierID, String dateServeur, String refTxSysPmt, byte[] MAC) throws Exception {
+		byte[] calculatedMAC = SecurityUtil.calculateHashMAC_Billers_Debts(aquereurID, canalID, dateServeur, modeID,
 				creancierID, refTxSysPmt, typeCanal, this.secret);
 		SecurityUtil.isMACValid(MAC, calculatedMAC, Constants.FACTORY_DEBTS);
 		this.getCanal(typeCanal, Constants.FACTORY_DEBTS);
@@ -58,8 +58,8 @@ public class DebtServiceImpl implements DebtService {
 
 	@Override
 	public FormFieldsResponseDTO getFormFields(String typeCanal, String aquereurID, String modeID, String canalID,
-			String creancierID, String creanceID, String dateServeur, String refTxSysPmt, String MAC) throws Exception {
-		String calculatedMAC = SecurityUtil.calculateHashMAC_FormFields(aquereurID, canalID, creanceID, creancierID,
+			String creancierID, String creanceID, String dateServeur, String refTxSysPmt, byte[] MAC) throws Exception {
+		byte[] calculatedMAC = SecurityUtil.calculateHashMAC_FormFields(aquereurID, canalID, creanceID, creancierID,
 				dateServeur, modeID, refTxSysPmt, typeCanal, this.secret);
 		SecurityUtil.isMACValid(MAC, calculatedMAC, Constants.FACTORY_FORMFIELDS);
 		this.getCanal(typeCanal, Constants.FACTORY_FORMFIELDS);

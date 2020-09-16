@@ -11,8 +11,8 @@ import effyis.rdv.payment.dto.FormFieldsResponseDTO;
 public interface DebtService {
 
 	DebtsResponseDTO getDebts(String typeCanal, String aquereurID, String modeID, String canalID, String creancierID,
-			String dateServeur, String refTxSysPmt, String MAC) throws Exception;
+			String dateServeur, String refTxSysPmt, byte[] MAC) throws Exception;
 
 	FormFieldsResponseDTO getFormFields(String typeCanal, String aquereurID, String modeID, String canalID,
-			String creancierID, String creanceID, String dateServeur, String refTxSysPmt, String MAC) throws Exception;
+			String creancierID, String creanceID, String dateServeur, String refTxSysPmt, byte[] MAC) throws Exception;
 }

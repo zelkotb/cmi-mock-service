@@ -28,7 +28,6 @@ public class BillerController {
 	@PostMapping()
 	public BillersResponseDTO getBillers(@Valid @RequestBody RequestDTO requestDTO,
 			@RequestParam(required = false) String categorieCreance) throws Exception {
-
 		return this.billerservice.getBillers(requestDTO.getTypeCanal(), requestDTO.getAquereurID(),
 				requestDTO.getModeID(), requestDTO.getCanalID(), requestDTO.getDateServeur(), categorieCreance,
 				requestDTO.getRefTxSysPmt(), requestDTO.getMAC());
