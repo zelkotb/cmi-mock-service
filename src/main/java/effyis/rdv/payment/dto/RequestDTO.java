@@ -9,20 +9,20 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class RequestDTO {
 
 	@NotBlank(message = "typeCanal is missing")
-	private String typeCanal;
+	protected String typeCanal;
 	@NotBlank(message = "aquereurID is missing")
-	private String aquereurID;
+	protected String aquereurID;
 	@NotBlank(message = "modeID is missing")
-	private String modeID;
+	protected String modeID;
 	@NotBlank(message = "canalID is missing")
-	private String canalID;
+	protected String canalID;
 	@NotBlank(message = "dateServeur is missing")
-	private String dateServeur;
-	private String refTxSysPmt;
+	protected String dateServeur;
+	protected String refTxSysPmt;
 	@JsonProperty("MAC")
-	private byte[] MAC;
-	private String creancierID;
-	private String creanceID;
+	protected byte[] MAC;
+	protected String creancierID;
+	protected String creanceID;
 
 	public String getTypeCanal() {
 		return this.typeCanal;

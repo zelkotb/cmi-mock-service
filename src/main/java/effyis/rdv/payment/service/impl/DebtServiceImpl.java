@@ -69,14 +69,16 @@ public class DebtServiceImpl implements DebtService {
 		return this.buildResponseFormFields(debt.getFormFields());
 	}
 
-	private Canal getCanal(String typeCanal, String type) throws Exception {
+	@Override
+	public Canal getCanal(String typeCanal, String type) throws Exception {
 		ExceptionFactory factory = new ExceptionFactory();
 		Canal canal = Canal.getCanalByCode(typeCanal,
 				factory.getException(type, ReturnCode.C113.getReturnCode(), ReturnCode.C113.getComment()));
 		return canal;
 	}
 
-	private void isBillerExiste(String creancierID, String type) throws Exception {
+	@Override
+	public void isBillerExiste(String creancierID, String type) throws Exception {
 		Biller biller = this.billerRepository.findByBillerCode(creancierID);
 		if (biller == null) {
 			ExceptionFactory factory = new ExceptionFactory();
@@ -84,7 +86,8 @@ public class DebtServiceImpl implements DebtService {
 		}
 	}
 
-	private Debt isDebtExisteAndActive(String creancierID, String creanceID, String typeCanal) {
+	@Override
+	public Debt isDebtExisteAndActive(String creancierID, String creanceID, String typeCanal) {
 		List<Debt> debts = this.debtRepository.findAllByBiller_BillerCode(creancierID);
 		Debt debt = debts.stream().filter(d -> d.getDebtCode().equals(creanceID)).findFirst().orElseThrow(
 				() -> new FormFieldException(ReturnCode.C105.getReturnCode(), ReturnCode.C105.getComment()));

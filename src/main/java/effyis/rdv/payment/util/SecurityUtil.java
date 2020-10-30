@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import effyis.rdv.payment.dto.BillerDTO;
+import effyis.rdv.payment.dto.FormFieldDTO;
 import effyis.rdv.payment.entity.Debt;
 import effyis.rdv.payment.entity.FormField;
 import effyis.rdv.payment.enumeration.ReturnCode;
@@ -49,6 +50,24 @@ public class SecurityUtil {
 		creanceID = creanceID == null ? "" : creanceID;
 		str.append(canalID).append(creancierID).append(creanceID).append(dateServeur).append(modeID).append(refTxSysPmt)
 				.append(typeCanal).append(secret);
+		return SecurityUtil.calculateHashInMD5(str.toString());
+	}
+
+	public static byte[] calculateHashMAC_Unpaids(String aquereurID, String canalID, List<FormFieldDTO> formFields,
+			String creanceID, String creancierID, String dateServeur, String modeID, String refTxSysPmt,
+			String refTxFatourati, String typeCanal, String secret) throws NoSuchAlgorithmException {
+
+		StringBuilder str = new StringBuilder(aquereurID);
+		refTxSysPmt = refTxSysPmt == null ? "" : refTxSysPmt;
+		refTxFatourati = refTxFatourati == null ? "" : refTxFatourati;
+		creancierID = creancierID == null ? "" : creancierID;
+		creanceID = creanceID == null ? "" : creanceID;
+		str.append(canalID);
+		List<String> concateNomValeur = formFields.stream().map(field -> field.getNomChamp() + field.getValeurChamp())
+				.collect(Collectors.toList());
+		concateNomValeur.forEach(c -> str.append(c));
+		str.append(creanceID).append(creancierID).append(dateServeur).append(modeID).append(refTxSysPmt)
+				.append(refTxFatourati).append(typeCanal).append(secret);
 		return SecurityUtil.calculateHashInMD5(str.toString());
 	}
 

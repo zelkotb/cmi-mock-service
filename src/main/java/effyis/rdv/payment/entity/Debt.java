@@ -20,6 +20,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonProperty.Access;
 
 import effyis.rdv.payment.enumeration.Canal;
+import effyis.rdv.payment.enumeration.FeesType;
 
 /**
  *
@@ -54,6 +55,15 @@ public class Debt {
 	@JsonIgnore
 	@OneToMany(orphanRemoval = true, cascade = CascadeType.ALL)
 	private List<FormField> formFields;
+	@JsonIgnore
+	@OneToMany(orphanRemoval = true, cascade = CascadeType.ALL)
+	private List<Unpaid> unpaids;
+	@JsonIgnore
+	private FeesType feesType;
+	@JsonIgnore
+	private String feesValue;
+	@JsonIgnore
+	private String seuilMinimal;
 
 	public Debt() {
 		super();
@@ -114,6 +124,38 @@ public class Debt {
 
 	public void setCanals(List<Canal> canals) {
 		this.canals = canals;
+	}
+
+	public List<Unpaid> getUnpaids() {
+		return this.unpaids;
+	}
+
+	public void setUnpaids(List<Unpaid> unpaids) {
+		this.unpaids = unpaids;
+	}
+
+	public FeesType getFeesType() {
+		return this.feesType;
+	}
+
+	public void setFeesType(FeesType feesType) {
+		this.feesType = feesType;
+	}
+
+	public String getFeesValue() {
+		return this.feesValue;
+	}
+
+	public void setFeesValue(String feesValue) {
+		this.feesValue = feesValue;
+	}
+
+	public String getSeuilMinimal() {
+		return this.seuilMinimal;
+	}
+
+	public void setSeuilMinimal(String seuilMinimal) {
+		this.seuilMinimal = seuilMinimal;
 	}
 
 }

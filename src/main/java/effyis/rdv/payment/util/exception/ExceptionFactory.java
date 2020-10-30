@@ -17,6 +17,8 @@ public class ExceptionFactory {
 			return new DebtsException(returnCode, message);
 		case Constants.FACTORY_FORMFIELDS:
 			return new FormFieldException(returnCode, message);
+		case Constants.FACTORY_UNPAIDS:
+			return new FormFieldException(returnCode, message);
 		default:
 			throw new Exception();
 		}
