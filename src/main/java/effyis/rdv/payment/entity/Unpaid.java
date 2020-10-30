@@ -1,5 +1,6 @@
 package effyis.rdv.payment.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -23,6 +24,7 @@ public class Unpaid {
 	@JsonProperty("dateFacture")
 	private String billDate;
 	@JsonProperty("prixTTC")
+	@Column(name = "pricettc")
 	private double priceTTC;
 	@JsonProperty("typeArticle")
 	private int articleType;

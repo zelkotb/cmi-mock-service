@@ -17,7 +17,7 @@ insert into form_field (field_name, field_type, list_vals, field_format, min_siz
 insert into debt_form_fields (debt_id, form_fields_id) values (3,5),(3,6);
 
 insert into biller (biller_name, biller_code, biller_description, logo_path, website, category) values ('MAROC TELECOM', '0004', 'IAM Facture', 'http://localhost:8080/maroc-telecom-logo.jpg','https://maroctelecom.com','2');
-insert into debt (debt_code, debt_name, active, biller_id) values ('01','Facture Fixe',true,4);
+insert into debt (debt_code, debt_name, active, biller_id, fees_type, fees_value, seuil_minimal) values ('01','Facture Fixe',true,4,1,'10','0');
 insert into form_field (field_name, field_type, field_format, min_size, max_size, contrainte) values ('Numéro de téléphone Fixe','text','entier',4,15,1);
 insert into form_field (field_name, field_type, field_format, min_size, max_size, contrainte) values ('Code Confidentiel','password','chaine',5,5,1);
 insert into debt_form_fields (debt_id, form_fields_id) values (4,7),(4,8);
@@ -68,6 +68,9 @@ insert into form_field (libelle, field_type, field_format, min_size, max_size, c
 insert into form_field (field_name, field_type, field_format, min_size, max_size, contrainte) values ('Référence Fatourati','text','chaine',4,15,1);
 insert into form_field (field_name, field_type, list_vals, field_format, min_size, max_size, contrainte) values ('Type de Vole','checkbox','Aller-Retour VIP;Aller-Retour SIMPLE;Aller-VIP','chaine',4,15,1);
 insert into debt_form_fields (debt_id, form_fields_id) values (14,23),(14,24),(14,25);
+
+insert into unpaid (article_id,description,bill_date,pricettc,article_type,identifier_field,identifier_field_value,has_unpaid) values ('FRAIS','rieeeeen','2019/01/2020',200,1,'Numéro de téléphone Fixe','0796557946',true);
+insert into debt_unpaids (debt_id, unpaids_id) values (4,1);
 
 insert into debt_canal (debt, canal) values (1,'1'),(1,'2'),(1,'3'),(1,'4');
 insert into debt_canal (debt, canal) values (2,'1'),(2,'2'),(2,'3'),(2,'4');

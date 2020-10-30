@@ -37,12 +37,13 @@ public class UnpaidServiceImpl implements UnpaidService {
 	@Value("${security.hash.secret}")
 	private String secret;
 
+	@Override
 	public UnpaidResponseDTO getUnpaid(String typeCanal, String aquereurID, String modeID, String canalID,
 			String outlet, String location, String creancierID, String creanceID, String dateServeur,
 			String refTxSysPmt, String refTxFatourati, List<FormFieldDTO> formFields, byte[] MAC) throws Exception {
 		byte[] calculatedMAC = SecurityUtil.calculateHashMAC_Unpaids(aquereurID, canalID, formFields, creanceID,
 				creancierID, dateServeur, modeID, refTxSysPmt, refTxFatourati, typeCanal, this.secret);
-		SecurityUtil.isMACValid(MAC, calculatedMAC, Constants.FACTORY_UNPAIDS);
+		// SecurityUtil.isMACValid(MAC, calculatedMAC, Constants.FACTORY_UNPAIDS);
 		this.debtService.getCanal(typeCanal, Constants.FACTORY_UNPAIDS);
 		this.debtService.isBillerExiste(creancierID, Constants.FACTORY_UNPAIDS);
 		Debt debt = this.debtService.isDebtExisteAndActive(creancierID, creanceID, typeCanal);
@@ -69,7 +70,7 @@ public class UnpaidServiceImpl implements UnpaidService {
 				this.calculateTotalAmountTTC(unpaids, debt.getFeesType(), debt.getFeesValue(), debt.getSeuilMinimal()));
 		dto.setNbreCreances(unpaids.size());
 		dto.setMAC(new byte[3]);
-		return null;
+		return dto;
 	}
 
 	// don't forget penality
